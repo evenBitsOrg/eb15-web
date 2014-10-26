@@ -161,7 +161,7 @@
 		padding: 20px 0;
 		margin: 0 auto;
 	}
-	input[type="text"] {
+	input[type="email"] {
 		font-family: 'Play', 'GillSans-Light', 'Gill Sans Light', 'Gill Sans', 'Myriad Pro', 'Myriad Set Pro', 'Myriad', 'Myriad Set', Myriad, 'Open Sans', 'Helvetica Neue', Helvetica, 'NotoSansCJKsc-Light', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Source Han Sans CJK', 'Noto Sans CJK', 'Source Han Sans JP', 'Noto Sans CJK JP', 'Source Han Sans', 'Noto Sans CJK', 'Lantinghei SC', 'Lantinghei TC', 'Hiragino Sans GB', 'Hiragino Kaku Gothic Pro', Hiragino, sans-serif;
 		font-size: 16px;
 		color: #555;
@@ -177,7 +177,7 @@
 		padding: 4px 8px;
 		margin: 0 20px 0 0;
 	}
-	input[type="text"]:focus {
+	input[type="email"]:focus {
 		outline: none;
 	}
 	.btn {
@@ -215,6 +215,9 @@
 		text-align: center;
 	}
 	</style>
+	<style type="text/css">
+	input[type="email"]
+	</style>
 	<script type="text/javascript" src="main.js"></script>
 </head>
 <body>
@@ -248,10 +251,10 @@
 						<h2>预订稍后开放</h2>
 						<p>留下邮箱地址，当开放预订时即可收到邮件邀请。</p>
 						<div class="form-preorder">
-							<button type="button" id="submit-email-preorder" class="btn btn-submit" onclick="submitEmailPreorder()">预约</button><input type="text" placeholder="john.appleseed@example.com" id="input-email">
+							<button type="button" class="btn btn-submit" id="submit-email-preorder" onclick="submitEmailPreorder()">预约</button><input type="text" placeholder="john.appleseed@example.com" id="input-email">
 						</div>
 						<div class="message">
-							<span class="message-span" id="email-preorder-server-back-message"></span>
+							<span class="message-span" id="email-preorder-server-back-message">&nbsp;</span>
 						</div>
 					</div>
 				</section>
