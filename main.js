@@ -13,13 +13,13 @@ var receiveServerBackMessage = function (message) {
 	// If (2) already added to database before, duplicate
 	if (message.messageCode == 0) {
 		showEmailSignUpResultToUser("无效的邮箱地址。请检查输入。");
-		document.getElementById("input-email")["data-state"] = 100;
+		document.getElementById("input-email").datastate = "100";
 	} else if (message.messageCode == 1) {
 		showEmailSignUpResultToUser("登记成功啦！");
-		document.getElementById("input-email")["data-state"] = 101;
+		document.getElementById("input-email").datastate = "101";
 	} else if (message.messageCode == 2) {
 		showEmailSignUpResultToUser("已经成功登记了喔 XD");
-		document.getElementById("input-email")["data-state"] = 102;
+		document.getElementById("input-email").datastate = "102";
 	};
 };
 
