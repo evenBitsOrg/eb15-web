@@ -216,7 +216,12 @@
 	}
 	</style>
 	<style type="text/css">
-	input[type="email"]
+	input[type="email"][data-state="100"] {
+		background-color: #FF9999;
+	}
+	input[type="email"][data-state="101"], input[type="email"][data-state="102"] {
+		background-color: #DEFFDE;
+	}
 	</style>
 	<script type="text/javascript" src="main.js"></script>
 </head>
