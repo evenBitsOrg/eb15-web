@@ -40,5 +40,9 @@ var submitEmailPreorder = function () {
 	} else {
 		showEmailSignUpResultToUser("无效的邮箱地址。请检查输入。");
 		document.getElementById("input-email").datastate = "100";
+		window.setTimeout(function(){
+			showEmailSignUpResultToUser(" ");
+			document.getElementById("input-email").datastate = "000";
+		}, 1200);
 	};
 };
