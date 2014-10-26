@@ -33,5 +33,8 @@ var submitEmailPreorder = function () {
 		window.neopXHR.onload = function () {
 			receiveServerBackMessage(JSON.parse(window.neopXHR.responseText));
 		};
+	} else {
+		showEmailSignUpResultToUser("无效的邮箱地址。请检查输入。");
+		document.getElementById("input-email").datastate = "100";
 	};
 };
