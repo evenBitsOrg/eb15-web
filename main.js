@@ -4,6 +4,9 @@ var validateEmail = function (email) {
 };
 
 var receiveServerBackMessage = function (message) {
+	// If (0) invalid email address
+	// If (1) successfully added to database
+	// If (2) already added to database before, duplicate
 	if (message.messageCode == 0) {
 		console.log("Invalid email address.");
 	} else if (message.messageCode == 1) {
