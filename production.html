@@ -29,7 +29,7 @@
 	}
 	header.global {
 		height: 100%;
-		padding: 17% 0 0 0;
+		padding: 17% 0 4%;
 	}
 	header.global h1, header.global h2 {
 		font-weight: 400;
@@ -84,14 +84,45 @@
 		font-style: normal;
 		text-align: center;
 	}
+	#main {
+		opacity: 0;
+	}
 	</style>
 	<style type="text/css">
 	section.global {
 		padding: 100px 0;
 	}
 	.global-in {
+		max-width: 1100px;
 		padding: 0;
 		margin: 0 auto;
+	}
+	.global-in h2 {
+		font-size: 2em;
+		text-align: center;
+	}
+	.global-in h2, .global-in h3, .global-in h4 {
+		font-weight: 300;
+		line-height: 1em;
+		margin: 0;
+	}
+	</style>
+	<style type="text/css">
+	section#play {
+		color: #FFF;
+		text-shadow: rgba(0, 0, 0, 0.0877) 0 1px 0;
+		background: #35A2F2;
+	}
+	section#gsn {
+		color: #FFF;
+		background: #000;
+	}
+	section#gsn {
+		background: #000 url(gsn.jpg) top no-repeat scroll;
+		background-size: 550px 420px;
+	}
+	section#gsn h2 {
+		padding-top: 320px;
 	}
 	</style>
 	<script type="text/javascript">
@@ -101,28 +132,31 @@
 	<div class="cont">
 		<div class="content">
 			<header class="global" id="header">
-				<h1 id="header-h1"><!-- <img src="h1.svg"> -->evenBits<sup>[0]</sup></h1>
-				<h2 id="header-h2"><span>于浪潮之巅</span> <span>听梦想的跃动</span></h2>
+				<h1 id="header-h1">evenBits<sup>[0]</sup></h1>
+				<h2 id="header-h2"><span>于浪潮之巅</span> <span>听梦想跃动</span></h2>
 				<div id="event-meta-info">
 					<address>Ningbo, China</address>
 					<time>July 27, 2015</time>
 				</div>
 			</header>
-			<section class="global" id="play">
-				<div class="global-in">
-					<h2></h2>
-				</div>
-			</section>
-			<section class="global" id="gsn">
-				<div class="global-in">
-					<h2></h2>
-				</div>
-			</section>
-			<section class="global" id="order">
-				<div class="global-in">
-					<h2></h2>
-				</div>
-			</section>
+			<div id="main">
+				<section class="global" id="play">
+					<div class="global-in">
+						<h2>每一比特凝聚的熵</h2>
+					</div>
+				</section>
+				<section class="global" id="gsn">
+					<div class="global-in">
+						<div class="gsn-logo"></div>
+						<h2>极客今晚留下来</h2>
+					</div>
+				</section>
+				<section class="global" id="order">
+					<div class="global-in">
+						<h2></h2>
+					</div>
+				</section>
+			</div>
 <script type="text/javascript">
 (function(){
 	window.setTimeout(function(){
@@ -141,6 +175,7 @@
 	}, 2400);
 	window.setTimeout(function(){
 		document.getElementById("event-meta-info").style.opacity = "1";
+		document.getElementById("main").style.opacity = "1";
 	}, 3000);
 })();
 </script>
