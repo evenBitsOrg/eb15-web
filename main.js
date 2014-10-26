@@ -20,7 +20,8 @@ var submitEmailPreorder = function () {
 	var inputEmail = document.getElementById("input-email").value;
 	if (validateEmail(inputEmail)) {
 		window.neopXHR = new XMLHttpRequest();
-		window.neopXHR.open("get", "email-preorder.json?email=" + inputEmail, true);
+		window.neopXHR.open("GET", "email-preorder.json", true);
+		// window.neopXHR.open("GET", "email-preorder.json?email=" + inputEmail, true);
 		window.neopXHR.send();
 		window.neopXHR.onload = function () {
 			receiveServerBackMessage(JSON.parse(window.neopXHR.responseText));
