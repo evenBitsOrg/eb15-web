@@ -1,3 +1,7 @@
+var showEmailSignUpResultToUser = function (message) {
+	document.getElementById("email-preorder-server-back-message").innerHTML = message;
+};
+
 var validateEmail = function (email) { 
 	var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 	return re.test(email);
@@ -8,11 +12,14 @@ var receiveServerBackMessage = function (message) {
 	// If (1) successfully added to database
 	// If (2) already added to database before, duplicate
 	if (message.messageCode == 0) {
-		console.log("Invalid email address.");
+		showEmailSignUpResultToUser("无效的邮箱地址。请检查输入。");
+		document.getElementById("input-email")["data-state"] = 100;
 	} else if (message.messageCode == 1) {
-		console.log("200 OK.");
+		showEmailSignUpResultToUser("登记成功啦！");
+		document.getElementById("input-email")["data-state"] = 101;
 	} else if (message.messageCode == 2) {
-		console.log("You have already signed up.");
+		showEmailSignUpResultToUser("已经成功登记了喔 XD");
+		document.getElementById("input-email")["data-state"] = 102;
 	};
 };
 
@@ -21,7 +28,7 @@ var submitEmailPreorder = function () {
 	if (validateEmail(inputEmail)) {
 		window.neopXHR = new XMLHttpRequest();
 		window.neopXHR.open("GET", "email-preorder.json", true);
-		/////// window.neopXHR.open("GET", "email-preorder.json?email=" + inputEmail, true);
+		/// window.neopXHR.open("GET", "email-preorder.json?email=" + inputEmail, true);
 		window.neopXHR.send();
 		window.neopXHR.onload = function () {
 			receiveServerBackMessage(JSON.parse(window.neopXHR.responseText));
