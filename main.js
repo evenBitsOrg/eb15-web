@@ -21,6 +21,10 @@ var receiveServerBackMessage = function (message) {
 		showEmailSignUpResultToUser("已经成功登记了喔 XD");
 		document.getElementById("input-email").datastate = "102";
 	};
+	window.setTimeout(function(){
+		showEmailSignUpResultToUser(" ");
+		document.getElementById("input-email").datastate = "000";
+	}, 1200);
 };
 
 var submitEmailPreorder = function () {
