@@ -13,6 +13,7 @@
 	</style>
 	<style type="text/css">
 	@import url(http://joyneop.github.io/fonts/play.css);
+	@import url(http://joyneop.github.io/fonts/font-awesome.css);
 	* {
 		transition: all 750ms ease;
 		box-sizing: border-box;
@@ -159,7 +160,9 @@
 		background: #F8F8F8;
 	}
 	.mini-box {
-		padding: 30px 0 0;
+		padding: 60px 0 30px;
+	}
+	.feedback {
 	}
 	section table {
 		border-collapse: collapse;
@@ -205,6 +208,9 @@
 	.btn {
 		font-family: 'Play', 'GillSans-Light', 'Gill Sans Light', 'Gill Sans', 'Myriad Pro', 'Myriad Set Pro', 'Myriad', 'Myriad Set', Myriad, 'Open Sans', 'Helvetica Neue', Helvetica, 'Lantinghei SC', 'Lantinghei TC', 'Hiragino Sans GB', 'NotoSansCJKsc-Light', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Source Han Sans CJK', 'Noto Sans CJK', 'Source Han Sans JP', 'Noto Sans CJK JP', 'Source Han Sans', 'Noto Sans CJK', 'Hiragino Kaku Gothic Pro', Hiragino, sans-serif;
 		font-size: 16px;
+		letter-spacing: 1px;
+		text-align: center;
+		text-decoration: none;
 		border-radius: 3px;
 		cursor: pointer;
 
@@ -217,7 +223,6 @@
 	}
 	.btn.btn-submit {
 		color: #FFF;
-		letter-spacing: 1px;
 		text-shadow: rgba(0, 0, 0, 0.11111) 0 1px 0;
 		background: #0CBFFA;
 		border: 1px solid rgba(0, 0, 0, 0.14);
@@ -228,6 +233,20 @@
 		border: 1px solid rgba(0,0,0,0.14);
 		border-radius: 4px;
 		box-shadow: inset 0px 2px 20px 0px rgba(0,0,0,0.16);
+	}
+	.btn.btn-email {
+		color: #FFF;
+		background: none;
+		border: 1px solid rgba(255, 255, 255, 0.75);
+		border-radius: 2000px;
+		box-shadow: none;
+
+		display: block;
+		width: 100px;
+		height: 100px;
+	}
+	p ~ .btn.btn-email {
+		margin: 10px auto 0;
 	}
 	#submit-email-preorder {
 		float: right;
@@ -247,6 +266,10 @@
 	input[datastate="101"], input[datastate="102"] {
 		background-color: #E4FFE9;
 	}
+	input[disabled] {
+		background: rgba(255, 255, 255, 0.0222222);
+		box-shadow: none;
+	}
 	</style>
 	<script type="text/javascript" src="main.js"></script>
 </head>
@@ -255,7 +278,7 @@
 		<div class="content">
 			<header class="global" id="header">
 				<h1 id="header-h1">evenBits<sup>[0]</sup></h1>
-				<h2 id="header-h2"><span><del>{{ subheading }}</del></span></h2>
+				<h2 id="header-h2"><span>青少年极客大会</span></h2>
 				<div id="event-meta-info">
 					<address>Ningbo, China</address>
 					<time>July 27, 2015</time>
@@ -266,8 +289,7 @@
 					<div class="global-in">
 						<h2>每一比特凝聚的熵</h2>
 						<p>要成为码农王的男人，颈椎保健是头等大事。</p>
-						<p>还有读书就业、培育下一代小极客。</p>
-						<p>以及更多关于未来发展的小抄条。</p>
+						<p>还有读书就业、培育下一代小极客。以及更多关于未来发展的小抄条。</p>
 						<div class="global-in mini-box">
 							<h3>Featured Speeches</h3>
 							<table>
@@ -281,19 +303,23 @@
 										<td>中国各大互联网公司就工作体验</td>
 									</tr>
 									<tr>
-										<td>北上广生活指南</td>
-										<td>硅谷生活指南</td>
+										<td>北上广户籍攻略</td>
+										<td>北美移民攻略</td>
 									</tr>
 									<tr>
-										<td>未来五年中国就业形势分析</td>
-										<td>未来五年美国就业形势分析</td>
+										<td>中国就业形势</td>
+										<td>美国就业形势</td>
 									</tr>
 									<tr>
-										<td>如何优雅地听一场演讲</td>
-										<td><del>都是时臣的错</del></td>
+										<td>下一代的教育与顶级中学招生策略</td>
+										<td><del>如何优雅地听一场演讲</del></td>
 									</tr>
 								</tbody>
 							</table>
+						</div>
+						<div class="feedback">
+							<p>在我们的舞台上分享你的演讲吧！</p>
+							<a href="mailto:admin@geek-stay-night.com" class="btn btn-email"><i class="fa fa-envelope"></i></a>
 						</div>
 					</div>
 				</section>
@@ -304,6 +330,7 @@
 						<p>被命运召集起来的骚年们，相聚<del>冬木市（划掉）</del>宁波市。</p>
 						<p>今晚，两大抑止力、五大魔法纠缠于此，开启根源之涡，通向全部的过去与未来。</p>
 						<div class="global-in mini-box">
+							<h3>Featured Activities</h3>
 							<table>
 								<tbody>
 									<tr>
@@ -325,6 +352,10 @@
 								</tbody>
 							</table>
 						</div>
+						<div class="feedback">
+							<p>想到了更有趣的创意玩法？告诉我们吧！</p>
+							<a href="mailto:admin@geek-stay-night.com" class="btn btn-email"><i class="fa fa-envelope"></i></a>
+						</div>
 					</div>
 				</section>
 				<section class="global" id="order">
@@ -333,7 +364,7 @@
 						<p>留下邮箱地址，当开放预订时即可收到邮件邀请。</p>
 						<p><del>其实后台还没搭起来，不要上当了（ 233</del></p>
 						<div class="form-preorder">
-							<button type="button" class="btn btn-submit" id="submit-email-preorder" onclick="submitEmailPreorder()">登记</button><input type="email" placeholder="dudulu@sern.org" id="input-email" datastate="000">
+							<button type="button" class="btn btn-submit" id="submit-email-preorder" onclick="submitEmailPreorder()">登记</button><input type="email" placeholder="dudulu@sern.org" id="input-email" datastate="000" disabled>
 						</div>
 						<div class="message-line" id="email-preorder-server-back-message"></div>
 					</div>
@@ -351,8 +382,7 @@
 						</ul>
 					</div>
 					<div class="copyright">
-						© 2014 evenMedia Foundation. Designed by Joy Neop.<br />
-						GOD'S IN HIS HEAVEN. ALL'S RIGHT WITH THE WORLD.
+						© 2014 evenMedia Foundation. Designed by Joy Neop.<br />GOD'S IN HIS HEAVEN. ALL'S RIGHT WITH THE WORLD.<br /><small>组委会保留本次大会最终解释权</small>
 					</div>
 				</footer>
 			</div>
