@@ -29,7 +29,7 @@
 	}
 	header.global {
 		height: 100%;
-		padding: 17% 0 9%;
+		padding: 17% 0 14%;
 	}
 	header.global h1, header.global h2 {
 		font-weight: 400;
@@ -90,11 +90,11 @@
 	</style>
 	<style type="text/css">
 	section.global {
-		padding: 100px 0 180px;
+		padding: 20px 0 180px;
 	}
 	.global-in {
 		max-width: 1000px;
-		padding: 0;
+		padding: 80px 0 0;
 		margin: 0 auto;
 	}
 	.global-in h2 {
@@ -104,6 +104,8 @@
 	.global-in h2, .global-in h3, .global-in h4 {
 		font-weight: 300;
 		line-height: 1em;
+		text-align: center;
+
 		padding: 0 0 15px;
 		margin: 0;
 	}
@@ -130,14 +132,15 @@
 		display: inline-block;
 	}
 	footer.global .sponsor ul li img {
-		max-height: 60px;
+		max-height: 50px;
+		padding: 0 10px;
 	}
 	</style>
 	<style type="text/css">
 	section#play {
 		color: #FFF;
 		text-shadow: rgba(0, 0, 0, 0.0877) 0 1px 0;
-		background: #35A2F2;
+		background: #32A7E0;
 	}
 	section#gsn {
 		color: #FFF;
@@ -146,6 +149,7 @@
 	section#gsn {
 		background: #000 url(gsn.jpg) top no-repeat scroll;
 		background-size: 550px 420px;
+		background-origin: content-box;
 	}
 	section#gsn h2 {
 		padding-top: 320px;
@@ -154,10 +158,13 @@
 		color: #444;
 		background: #F8F8F8;
 	}
+	.mini-box {
+		padding: 30px 0 0;
+	}
 	section table {
 		border-collapse: collapse;
 
-		margin: 30px auto;
+		margin: 10px auto;
 	}
 	section table td {
 		font-size: 16px;
@@ -168,9 +175,6 @@
 
 		width: 300px;
 		padding: 5px 0;
-	}
-	section table tr:first-child td {
-		/*border: none;*/
 	}
 	</style>
 	<style type="text/css">
@@ -251,7 +255,7 @@
 		<div class="content">
 			<header class="global" id="header">
 				<h1 id="header-h1">evenBits<sup>[0]</sup></h1>
-				<h2 id="header-h2"><span><del>被命运选中的孩子们</del></span></h2>
+				<h2 id="header-h2"><span><del>{{ subheading }}</del></span></h2>
 				<div id="event-meta-info">
 					<address>Ningbo, China</address>
 					<time>July 27, 2015</time>
@@ -265,6 +269,7 @@
 						<p>还有读书就业、培育下一代小极客。</p>
 						<p>以及更多关于未来发展的小抄条。</p>
 						<div class="global-in mini-box">
+							<h3>Featured Speeches</h3>
 							<table>
 								<tbody>
 									<tr>
@@ -310,8 +315,8 @@
 										<td><del>深夜广场舞</del></td>
 									</tr>
 									<tr>
-										<td>GNU 神教传教会</td>
-										<td><del>RMS 活佛朝拜会</del></td>
+										<td>GNU 传教会</td>
+										<td><del>RMS 朝拜会</del></td>
 									</tr>
 									<tr>
 										<td>弹幕圆桌讨论会</td>
@@ -326,9 +331,9 @@
 					<div class="global-in">
 						<h2>预订稍后开放</h2>
 						<p>留下邮箱地址，当开放预订时即可收到邮件邀请。</p>
-						<p><del>其实后台还没搭起来，不要上当了（233</del></p>
+						<p><del>其实后台还没搭起来，不要上当了（ 233</del></p>
 						<div class="form-preorder">
-							<button type="button" class="btn btn-submit" id="submit-email-preorder" onclick="submitEmailPreorder()">登记</button><input type="email" placeholder="dudulu@example.com" id="input-email" datastate="000">
+							<button type="button" class="btn btn-submit" id="submit-email-preorder" onclick="submitEmailPreorder()">登记</button><input type="email" placeholder="dudulu@sern.org" id="input-email" datastate="000">
 						</div>
 						<div class="message-line" id="email-preorder-server-back-message"></div>
 					</div>
@@ -337,10 +342,6 @@
 					<div class="sponsor">
 						<p>最后还要感谢以下赞助商么么哒</p>
 						<ul>
-							<li><a href="http://shixiann.com/"><img src="sp1.png"></a></li>
-							<li><a href="http://shixiann.com/"><img src="sp2.png"></a></li>
-							<li><a href="http://shixiann.com/"><img src="sp1.png"></a></li>
-							<li><a href="http://shixiann.com/"><img src="sp2.png"></a></li>
 							<li><a href="http://shixiann.com/"><img src="sp1.png"></a></li>
 							<li><a href="http://shixiann.com/"><img src="sp2.png"></a></li>
 							<li><a href="http://shixiann.com/"><img src="sp1.png"></a></li>
@@ -362,7 +363,7 @@ window.setTimeout(function(){
 	}, 800);
 	window.setTimeout(function(){
 		document.body.style.color = "#494949";
-	}, 900);
+	}, 1200);
 	window.setTimeout(function(){
 		document.getElementById("header-h1").style.opacity = "1";
 		document.getElementById("header-h1").style.top = "0";
@@ -370,11 +371,11 @@ window.setTimeout(function(){
 	window.setTimeout(function(){
 		document.getElementById("header-h2").style.opacity = "1";
 		document.getElementById("header-h2").style.top = "0";
-	}, 1200);
+	}, 1600);
 	window.setTimeout(function(){
 		document.getElementById("event-meta-info").style.opacity = "1";
 		document.getElementById("main").style.opacity = "1";
-	}, 1600);
+	}, 2400);
 }, 300);
 </script>
 		</div>
