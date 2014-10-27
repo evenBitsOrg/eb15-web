@@ -18,9 +18,9 @@
 		box-sizing: border-box;
 	}
 	body {
-		font-family: 'Play', 'GillSans-Light', 'Gill Sans Light', 'Gill Sans', 'Myriad Pro', 'Myriad Set Pro', 'Myriad', 'Myriad Set', Myriad, 'Open Sans', 'Helvetica Neue', Helvetica, 'NotoSansCJKsc-Light', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Source Han Sans CJK', 'Noto Sans CJK', 'Source Han Sans JP', 'Noto Sans CJK JP', 'Source Han Sans', 'Noto Sans CJK', 'Lantinghei SC', 'Lantinghei TC', 'Hiragino Sans GB', 'Hiragino Kaku Gothic Pro', Hiragino, sans-serif;
+		font-family: 'Play', 'GillSans-Light', 'Gill Sans Light', 'Gill Sans', 'Myriad Pro', 'Myriad Set Pro', 'Myriad', 'Myriad Set', Myriad, 'Open Sans', 'Helvetica Neue', Helvetica, 'Lantinghei SC', 'Lantinghei TC', 'Hiragino Sans GB', 'NotoSansCJKsc-Light', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Source Han Sans CJK', 'Noto Sans CJK', 'Source Han Sans JP', 'Noto Sans CJK JP', 'Source Han Sans', 'Noto Sans CJK', 'Hiragino Kaku Gothic Pro', Hiragino, sans-serif;
 		font-weight: 400;
-		font-size: 20px;
+		font-size: 18px;
 		color: #494949;
 		background: #000;
 
@@ -90,7 +90,7 @@
 	</style>
 	<style type="text/css">
 	section.global {
-		padding: 100px 0;
+		padding: 100px 0 180px;
 	}
 	.global-in {
 		max-width: 1000px;
@@ -154,6 +154,24 @@
 		color: #444;
 		background: #F8F8F8;
 	}
+	section table {
+		border-collapse: collapse;
+
+		margin: 30px auto;
+	}
+	section table td {
+		font-size: 16px;
+		font-weight: 300;
+		text-align: center;
+		border-top: 1px solid #FFF;
+		border-bottom: 1px solid #FFF;
+
+		width: 300px;
+		padding: 5px 0;
+	}
+	section table tr:first-child td {
+		/*border: none;*/
+	}
 	</style>
 	<style type="text/css">
 	.form-preorder {
@@ -162,7 +180,7 @@
 		margin: 0 auto;
 	}
 	input[type="email"] {
-		font-family: 'Play', 'GillSans-Light', 'Gill Sans Light', 'Gill Sans', 'Myriad Pro', 'Myriad Set Pro', 'Myriad', 'Myriad Set', Myriad, 'Open Sans', 'Helvetica Neue', Helvetica, 'NotoSansCJKsc-Light', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Source Han Sans CJK', 'Noto Sans CJK', 'Source Han Sans JP', 'Noto Sans CJK JP', 'Source Han Sans', 'Noto Sans CJK', 'Lantinghei SC', 'Lantinghei TC', 'Hiragino Sans GB', 'Hiragino Kaku Gothic Pro', Hiragino, sans-serif;
+		font-family: 'Play', 'GillSans-Light', 'Gill Sans Light', 'Gill Sans', 'Myriad Pro', 'Myriad Set Pro', 'Myriad', 'Myriad Set', Myriad, 'Open Sans', 'Helvetica Neue', Helvetica, 'Lantinghei SC', 'Lantinghei TC', 'Hiragino Sans GB', 'NotoSansCJKsc-Light', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Source Han Sans CJK', 'Noto Sans CJK', 'Source Han Sans JP', 'Noto Sans CJK JP', 'Source Han Sans', 'Noto Sans CJK', 'Hiragino Kaku Gothic Pro', Hiragino, sans-serif;
 		font-size: 16px;
 		color: #555;
 		border: 1px solid rgba(0, 0, 0, 0.15555);
@@ -181,7 +199,7 @@
 		outline: none;
 	}
 	.btn {
-		font-family: 'Play', 'GillSans-Light', 'Gill Sans Light', 'Gill Sans', 'Myriad Pro', 'Myriad Set Pro', 'Myriad', 'Myriad Set', Myriad, 'Open Sans', 'Helvetica Neue', Helvetica, 'NotoSansCJKsc-Light', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Source Han Sans CJK', 'Noto Sans CJK', 'Source Han Sans JP', 'Noto Sans CJK JP', 'Source Han Sans', 'Noto Sans CJK', 'Lantinghei SC', 'Lantinghei TC', 'Hiragino Sans GB', 'Hiragino Kaku Gothic Pro', Hiragino, sans-serif;
+		font-family: 'Play', 'GillSans-Light', 'Gill Sans Light', 'Gill Sans', 'Myriad Pro', 'Myriad Set Pro', 'Myriad', 'Myriad Set', Myriad, 'Open Sans', 'Helvetica Neue', Helvetica, 'Lantinghei SC', 'Lantinghei TC', 'Hiragino Sans GB', 'NotoSansCJKsc-Light', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Source Han Sans CJK', 'Noto Sans CJK', 'Source Han Sans JP', 'Noto Sans CJK JP', 'Source Han Sans', 'Noto Sans CJK', 'Hiragino Kaku Gothic Pro', Hiragino, sans-serif;
 		font-size: 16px;
 		border-radius: 3px;
 		cursor: pointer;
@@ -233,7 +251,7 @@
 		<div class="content">
 			<header class="global" id="header">
 				<h1 id="header-h1">evenBits<sup>[0]</sup></h1>
-				<h2 id="header-h2"><span>于浪潮之巅</span> <span>听梦想跃动</span></h2>
+				<h2 id="header-h2"><span><del>被命运选中的孩子们</del></span></h2>
 				<div id="event-meta-info">
 					<address>Ningbo, China</address>
 					<time>July 27, 2015</time>
@@ -245,6 +263,33 @@
 						<h2>每一比特凝聚的熵</h2>
 						<p>要成为码农王的男人，颈椎保健是头等大事。</p>
 						<p>还有读书就业、培育下一代小极客。</p>
+						<p>以及更多关于未来发展的小抄条。</p>
+						<div class="global-in mini-box">
+							<table>
+								<tbody>
+									<tr>
+										<td>颈椎病的预防与治疗</td>
+										<td>美国留学导论</td>
+									</tr>
+									<tr>
+										<td>中国各大城市大学介绍</td>
+										<td>中国各大互联网公司就工作体验</td>
+									</tr>
+									<tr>
+										<td>北上广生活指南</td>
+										<td>硅谷生活指南</td>
+									</tr>
+									<tr>
+										<td>未来五年中国就业形势分析</td>
+										<td>未来五年美国就业形势分析</td>
+									</tr>
+									<tr>
+										<td>如何优雅地听一场演讲</td>
+										<td><del>都是时臣的错</del></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
 				</section>
 				<section class="global" id="gsn">
@@ -253,7 +298,28 @@
 						<h2>极客今晚留下来</h2>
 						<p>被命运召集起来的骚年们，相聚<del>冬木市（划掉）</del>宁波市。</p>
 						<p>今晚，两大抑止力、五大魔法纠缠于此，开启根源之涡，通向全部的过去与未来。</p>
-						<p></p>
+						<div class="global-in mini-box">
+							<table>
+								<tbody>
+									<tr>
+										<td>黑客马拉松组队非诚勿扰</td>
+										<td><del>深夜广播体操</del></td>
+									</tr>
+									<tr>
+										<td>谁是卧底</td>
+										<td><del>深夜广场舞</del></td>
+									</tr>
+									<tr>
+										<td>GNU 神教传教会</td>
+										<td><del>RMS 活佛朝拜会</del></td>
+									</tr>
+									<tr>
+										<td>弹幕圆桌讨论会</td>
+										<td><del>勇敢的少年快去穿上女装</del></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
 				</section>
 				<section class="global" id="order">
@@ -269,7 +335,7 @@
 				</section>
 				<footer class="global" id="footer">
 					<div class="sponsor">
-						<p>最后还要感谢以下赞助商</p>
+						<p>最后还要感谢以下赞助商么么哒</p>
 						<ul>
 							<li><a href="http://shixiann.com/"><img src="sp1.png"></a></li>
 							<li><a href="http://shixiann.com/"><img src="sp2.png"></a></li>
@@ -296,20 +362,20 @@ window.setTimeout(function(){
 	}, 800);
 	window.setTimeout(function(){
 		document.body.style.color = "#494949";
-	}, 1600);
+	}, 900);
 	window.setTimeout(function(){
 		document.getElementById("header-h1").style.opacity = "1";
 		document.getElementById("header-h1").style.top = "0";
-	}, 1600);
+	}, 1200);
 	window.setTimeout(function(){
 		document.getElementById("header-h2").style.opacity = "1";
 		document.getElementById("header-h2").style.top = "0";
-	}, 2400);
+	}, 1200);
 	window.setTimeout(function(){
 		document.getElementById("event-meta-info").style.opacity = "1";
 		document.getElementById("main").style.opacity = "1";
-	}, 3000);
-}, 900);
+	}, 1600);
+}, 300);
 </script>
 		</div>
 	</div>
