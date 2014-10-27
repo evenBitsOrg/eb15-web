@@ -1,3 +1,4 @@
+/*
 var showEmailSignUpResultToUser = function (message) {
 	document.getElementById("email-preorder-server-back-message").innerHTML = message;
 };
@@ -46,3 +47,4 @@ var submitEmailPreorder = function () {
 		}, 1200);
 	};
 };
+*/

@@ -100,7 +100,9 @@
 	}
 	.global-in h2 {
 		font-size: 2em;
-		text-align: center;
+	}
+	.global-in h3 {
+		font-size: 1.3em;
 	}
 	.global-in h2, .global-in h3, .global-in h4 {
 		font-weight: 300;
@@ -160,7 +162,7 @@
 		background: #F8F8F8;
 	}
 	.mini-box {
-		padding: 60px 0 30px;
+		padding: 80px 0;
 	}
 	.feedback {
 	}
@@ -170,14 +172,17 @@
 		margin: 10px auto;
 	}
 	section table td {
-		font-size: 16px;
+		font-size: 18px;
 		font-weight: 300;
 		text-align: center;
 		border-top: 1px solid #FFF;
 		border-bottom: 1px solid #FFF;
 
-		width: 300px;
-		padding: 5px 0;
+		width: 330px;
+		padding: 9px 0;
+	}
+	section table td:first-child {
+		border-right: 1px solid rgba(255, 255, 255, 0.2222);
 	}
 	</style>
 	<style type="text/css">
@@ -238,7 +243,7 @@
 		font-size: 40px;
 		color: #FFF;
 		background: none;
-		border: 1px solid rgba(255, 255, 255, 0.75);
+		border: 2px solid rgba(255, 255, 255, 0.5);
 		border-radius: 2000px;
 		box-shadow: none;
 
@@ -249,6 +254,9 @@
 	}
 	p ~ .btn.btn-email {
 		margin: 10px auto 0;
+	}
+	.btn.btn-email:hover {
+		border: 2px solid rgba(255, 255, 255, 1);
 	}
 	#submit-email-preorder {
 		float: right;
@@ -302,7 +310,7 @@
 									</tr>
 									<tr>
 										<td>中国各大城市大学介绍</td>
-										<td>中国各大互联网公司就工作体验</td>
+										<td>中国各大互联网公司工作体验</td>
 									</tr>
 									<tr>
 										<td>北上广户籍攻略</td>
