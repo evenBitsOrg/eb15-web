@@ -48,3 +48,9 @@ var submitEmailPreorder = function () {
 	};
 };
 */
+
+var showCoreTeamMembers = function () {
+	document.getElementById("core-team").style.height = "196px";
+	document.getElementById("core-team").style.paddingTop = "20px";
+	document.getElementById("core-team").style.paddingBottom = "20px";
+};

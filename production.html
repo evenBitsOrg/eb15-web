@@ -13,6 +13,7 @@
 	</style>
 	<style type="text/css">
 	@import url(http://joyneop.github.io/fonts/play.css);
+	@import url(http://joyneop.github.io/fonts/open-sans.css);
 	@import url(http://joyneop.github.io/fonts/font-awesome.css);
 	* {
 		transition: all 750ms ease;
@@ -93,6 +94,7 @@
 		margin: -230px 0 0 0;
 	}
 	#main {
+		font-family: 'Myriad Pro', 'Myriad Set Pro', 'Myriad', 'Myriad Set', Myriad, 'Open Sans', 'Helvetica Neue', Helvetica, 'Lantinghei SC', 'Lantinghei TC', 'Hiragino Sans GB', 'NotoSansCJKsc-Light', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Source Han Sans CJK', 'Noto Sans CJK', 'Source Han Sans JP', 'Noto Sans CJK JP', 'Source Han Sans', 'Noto Sans CJK', 'Hiragino Kaku Gothic Pro', Hiragino, sans-serif;
 		opacity: 0;
 	}
 	</style>
@@ -127,11 +129,13 @@
 		margin: 0 auto;
 	}
 	footer.global {
-		padding: 30px 0;
+		padding: 30px 0 0;
 	}
 	footer.global .copyright {
 		font-size: 14px;
 		text-align: center;
+
+		padding: 10px 0 30px;
 	}
 	footer.global .sponsor ul {
 		text-align: center;
@@ -144,6 +148,55 @@
 	footer.global .sponsor ul li img {
 		max-height: 50px;
 		padding: 0 10px;
+	}
+	footer.global .core-team {
+		color: #FFF;
+		text-align: center;
+		background: #000;
+
+		padding: 0;
+		height: 0px;
+		overflow: hidden;
+		transition: none;
+	}
+	footer.global .core-team p {
+		font-size: 14px;
+	}
+	footer.global .core-team-member {
+		display: inline-block;
+		width: 110px;
+		padding: 10px 0 15px;
+		margin: 0 14px;
+	}
+	footer.global .core-team-member-link {
+		color: #FFF;
+		text-align: left;
+		text-decoration: none;
+
+		display: block;
+		height: 50px;
+	}
+	footer.global .core-team-member-avatar {
+		border-radius: 6px;
+
+		float: left;
+		width: 50px;
+		height: 50px;
+	}
+	footer.global .core-team-member-meta-info {
+		float: left;
+		padding: 5px 0 0 10px;
+	}
+	footer.global .core-team-member-name, footer.global .core-team-member-title {
+		color: #FFF;
+
+		display: block;
+	}
+	footer.global .core-team-member-name {
+		font-size: 16px;
+	}
+	footer.global .core-team-member-title {
+		font-size: 14px;
 	}
 	</style>
 	<style type="text/css">
@@ -402,8 +455,38 @@
 							<li><a href="http://shixiann.com/"><img src="sp2.png"></a></li>
 						</ul>
 					</div>
-					<div class="copyright">
-						© 2014 evenMedia Foundation. Designed by Joy Neop.<br />GOD'S IN HIS HEAVEN. ALL'S RIGHT WITH THE WORLD.<br /><small>组委会保留本次大会最终解释权</small>
+					<div class="copyright" onclick="showCoreTeamMembers()">
+						© 2014 evenMedia Foundation. Designed by Joy Neop.<br />组委会保留本次大会最终解释权
+					</div>
+					<div class="core-team" id="core-team">
+						<div class="core-team-member">
+							<a class="core-team-member-link" href="http://dimpurr.com/">
+								<img class="core-team-member-avatar" src="avatar-1.jpg">
+								<div class="core-team-member-meta-info">
+									<span class="core-team-member-name">钉子</span>
+									<span class="core-team-member-title">Prelate</span>
+								</div>
+							</a>
+						</div>
+						<div class="core-team-member">
+							<a class="core-team-member-link" href="http://laosb.lasteam.net/">
+								<img class="core-team-member-avatar" src="avatar-2.jpg">
+								<div class="core-team-member-meta-info">
+									<span class="core-team-member-name">laosb</span>
+									<span class="core-team-member-title">Archon</span>
+								</div>
+							</a>
+						</div>
+						<div class="core-team-member">
+							<a class="core-team-member-link" href="http://www.joyneop.com/">
+								<img class="core-team-member-avatar" src="avatar-3.jpg">
+								<div class="core-team-member-meta-info">
+									<span class="core-team-member-name">JN</span>
+									<span class="core-team-member-title">Oracle</span>
+								</div>
+							</a>
+						</div>
+						<p>GOD'S IN HIS HEAVEN. ALL'S RIGHT WITH THE WORLD.</p>
 					</div>
 				</footer>
 			</div>
