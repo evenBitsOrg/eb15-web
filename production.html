@@ -85,6 +85,13 @@
 		font-style: normal;
 		text-align: center;
 	}
+	header.global .inside-global-flex {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 100%;
+		margin: -230px 0 0 0;
+	}
 	#main {
 		opacity: 0;
 	}
@@ -289,17 +296,19 @@
 	<div class="cont">
 		<div class="content">
 			<header class="global" id="header">
-				<h1 id="header-h1">evenBits<sup>[0]</sup></h1>
-				<h2 id="header-h2"><span>青少年极客大会</span></h2>
-				<div id="event-meta-info">
-					<address>Ningbo, China</address>
-					<time>July 27, 2015</time>
+				<div class="inside-global-flex">
+					<h1 id="header-h1">evenBits<sup>[0]</sup></h1>
+					<h2 id="header-h2"><span>青少年极客大会</span></h2>
+					<div id="event-meta-info">
+						<address>Ningbo, China</address>
+						<time>July 27, 2015</time>
+					</div>
 				</div>
 			</header>
 			<div id="main">
 				<section class="global" id="play">
 					<div class="global-in">
-						<h2>每一比特凝聚的熵</h2>
+						<h2>每一比特中的熵</h2>
 						<p>要成为码农王的男人，颈椎保健是头等大事。</p>
 						<p>还有读书就业、培育下一代小极客。以及更多关于未来发展的小抄条。</p>
 						<div class="global-in mini-box">
@@ -383,7 +392,7 @@
 				</section>
 				<footer class="global" id="footer">
 					<div class="sponsor">
-						<p>最后还要感谢以下赞助商么么哒</p>
+						<p>最后还要感谢以下赞助商么么哒😘</p>
 						<ul>
 							<li><a href="http://shixiann.com/"><img src="sp1.png"></a></li>
 							<li><a href="http://shixiann.com/"><img src="sp2.png"></a></li>
@@ -400,7 +409,7 @@
 			</div>
 <script type="text/javascript">
 (function(){
-	document.getElementById("header").style.height = window.innerHeight + "px";
+	document.getElementById("header").style.height = (window.innerHeight-220) + "px";
 })();
 window.setTimeout(function(){
 	window.setTimeout(function(){
