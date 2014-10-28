@@ -8,6 +8,24 @@
 	<link rel="stylesheet" type="text/css" href="http://joyneop.github.io/fonts/play.css">
 	<link rel="stylesheet" type="text/css" href="http://joyneop.github.io/fonts/open-sans.css">
 	<link rel="stylesheet" type="text/css" href="http://joyneop.github.io/fonts/font-awesome.css">
+	<script type="text/javascript">
+	function docDidLoad() {
+		window.setTimeout(function(){
+			document.getElementById("header-h1").style.opacity = "1";
+			document.getElementById("header-h1").style.top = "0";
+		}, 1);
+		window.setTimeout(function(){
+			document.getElementById("header-h2").style.opacity = "1";
+			document.getElementById("header-h2").style.top = "0";
+		}, 800);
+		window.setTimeout(function(){
+			document.getElementById("event-meta-info").style.opacity = "1";
+		}, 1600);
+		window.setTimeout(function(){
+			document.getElementById("main").style.opacity = "1";
+		}, 2400);
+	};
+	</script>
 	<style type="text/css">
 	@-webkit-keyframes hquos {
 		from { padding: 0 0; }
@@ -364,7 +382,7 @@
 	</style>
 	<script type="text/javascript" src="main.js"></script>
 </head>
-<body>
+<body onload="docDidLoad()">
 	<div class="cont">
 		<div class="content">
 			<header class="global" id="header">
@@ -512,28 +530,13 @@
 					</div>
 				</footer>
 			</div>
-<script type="text/javascript">
-(function(){
-	document.getElementById("header").style.height = (window.innerHeight-240) + "px";
-})();
-window.setTimeout(function(){
-	window.setTimeout(function(){
-		document.getElementById("header-h1").style.opacity = "1";
-		document.getElementById("header-h1").style.top = "0";
-	}, 300);
-	window.setTimeout(function(){
-		document.getElementById("header-h2").style.opacity = "1";
-		document.getElementById("header-h2").style.top = "0";
-	}, 600);
-	window.setTimeout(function(){
-		document.getElementById("event-meta-info").style.opacity = "1";
-	}, 900);
-	window.setTimeout(function(){
-		document.getElementById("main").style.opacity = "1";
-	}, 1500);
-}, 300);
-</script>
 		</div>
 	</div>
+	<script type="text/javascript">
+	(function(){
+		document.getElementById("header").style.height = (window.innerHeight-240) + "px";
+		window.setTimeout(docDidLoad, 800);
+	})();
+	</script>
 </body>
 </html>
