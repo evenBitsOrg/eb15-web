@@ -79,7 +79,7 @@
 		text-align: center;
 		opacity: 0;
 
-		margin: 4em 0 0 0;
+		margin: 2.5em 0 0 0;
 	}
 	header.global #event-meta-info * {
 		font-size: 1em;
@@ -100,11 +100,10 @@
 	</style>
 	<style type="text/css">
 	section.global {
-		padding: 20px 0 100px;
 	}
 	.global-in {
 		max-width: 1000px;
-		padding: 80px 0 0;
+		padding: 0;
 		margin: 0 auto;
 	}
 	.global-in h2 {
@@ -164,9 +163,9 @@
 	}
 	footer.global .core-team-member {
 		display: inline-block;
-		width: 110px;
+		width: 180px;
 		padding: 10px 0 15px;
-		margin: 0 14px;
+		margin: 0 14px 0 20px;
 	}
 	footer.global .core-team-member-link {
 		color: #FFF;
@@ -198,25 +197,41 @@
 	footer.global .core-team-member-title {
 		font-size: 14px;
 	}
+	img.section-title-image {
+		display: block;
+		padding: 0;
+		margin: 0 auto;
+	}
+	img.section-top-or-bottom-image {
+		display: block;
+		padding: 0;
+		margin: 0;
+		width: 100%;
+		height: auto;
+	}
 	</style>
 	<style type="text/css">
 	section#play {
 		color: #FFF;
 		text-shadow: rgba(0, 0, 0, 0.0877) 0 1px 0;
-		background: #32A7E0 url(wave.png) top repeat-x scroll;
+		background: #32A7E0;
+	}
+	section#play div.section-top-or-bottom-image {
+		background: url(waves.png) top repeat-x scroll;
 		background-size: 300px 44px;
+
+		height: 100px;
 	}
 	section#gsn {
 		color: #FFF;
 		background: #000;
 	}
-	section#gsn {
-		background: #000 url(gsn.jpg) top no-repeat scroll;
-		background-size: 550px 420px;
-		background-origin: content-box;
+	section#gsn img.section-title-image {
+		width: 550px;
+		height:  420px;
 	}
 	section#gsn h2 {
-		padding-top: 320px;
+		/*padding-top: 320px;*/
 	}
 	section#order {
 		color: #444;
@@ -362,6 +377,7 @@
 			</header>
 			<div id="main">
 				<section class="global" id="play">
+					<div class="section-top-or-bottom-image"></div>
 					<div class="global-in">
 						<h2>每一比特中的熵</h2>
 						<p>要成为码农王的男人，颈椎保健是头等大事。</p>
@@ -398,10 +414,11 @@
 							<a href="mailto:admin@geek-stay-night.com" class="btn btn-email"><i class="fa fa-envelope"></i></a>
 						</div>
 					</div>
+					<img class="section-top-or-bottom-image" src="black-triangle.svg">
 				</section>
 				<section class="global" id="gsn">
 					<div class="global-in">
-						<div class="gsn-logo"></div>
+						<img class="section-title-image" src="gsn.jpg">
 						<h2>极客今晚留下来</h2>
 						<p>被命运召集起来的骚年们，相聚<del>冬木市（划掉）</del>宁波市。</p>
 						<p>今晚，两大抑止力、五大魔法纠缠于此，开启根源之涡，通向全部的过去与未来。</p>
@@ -433,6 +450,7 @@
 							<a href="mailto:admin@geek-stay-night.com" class="btn btn-email"><i class="fa fa-envelope"></i></a>
 						</div>
 					</div>
+					<img class="section-top-or-bottom-image" src="light-gray-triangle.svg">
 				</section>
 				<section class="global" id="order">
 					<div class="global-in">
@@ -466,7 +484,7 @@
 								<img class="core-team-member-avatar" src="avatar-1.jpg">
 								<div class="core-team-member-meta-info">
 									<span class="core-team-member-name">钉子</span>
-									<span class="core-team-member-title">Prelate</span>
+									<span class="core-team-member-title">Prelate — 零号机</span>
 								</div>
 							</a>
 						</div>
@@ -475,7 +493,7 @@
 								<img class="core-team-member-avatar" src="avatar-2.jpg">
 								<div class="core-team-member-meta-info">
 									<span class="core-team-member-name">laosb</span>
-									<span class="core-team-member-title">Archon</span>
+									<span class="core-team-member-title">Archon — 初号机</span>
 								</div>
 							</a>
 						</div>
@@ -484,7 +502,7 @@
 								<img class="core-team-member-avatar" src="avatar-3.jpg">
 								<div class="core-team-member-meta-info">
 									<span class="core-team-member-name">JN</span>
-									<span class="core-team-member-title">Oracle</span>
+									<span class="core-team-member-title">Oracle — 二号机</span>
 								</div>
 							</a>
 						</div>
