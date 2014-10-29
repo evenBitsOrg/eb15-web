@@ -8,7 +8,8 @@
 	<link rel="stylesheet" type="text/css" href="http://joyneop.github.io/fonts/play.css">
 	<link rel="stylesheet" type="text/css" href="http://joyneop.github.io/fonts/open-sans.css">
 	<link rel="stylesheet" type="text/css" href="http://joyneop.github.io/fonts/font-awesome.css">
-	<script type="text/javascript">
+	<script type="text/javascript"
+	() ();>
 	function browserSizeChange() {
 		document.getElementById("header").style.height = (window.innerHeight-240) + "px";
 	}
@@ -539,6 +540,7 @@
 	</div>
 	<script type="text/javascript">
 	(function(){
+		browserSizeChange();
 		window.onresize = browserSizeChange;
 		window.setTimeout(docDidLoad, 800);
 	})();
