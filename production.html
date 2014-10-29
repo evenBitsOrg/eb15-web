@@ -9,8 +9,13 @@
 	<link rel="stylesheet" type="text/css" href="http://joyneop.github.io/fonts/open-sans.css">
 	<link rel="stylesheet" type="text/css" href="http://joyneop.github.io/fonts/font-awesome.css">
 	<script type="text/javascript">
+	var initialWidth = window.innerWidth;
+	var firstTimeDetermineSize = true;
 	function browserSizeChange() {
-		document.getElementById("header").style.height = (window.innerHeight-240) + "px";
+		if (firstTimeDetermineSize || (initialWidth != window.innerWidth)) {
+			document.getElementById("header").style.height = (window.innerHeight-240) + "px";
+			firstTimeDetermineSize = false;
+		};
 	}
 	function docDidLoad() {
 		document.getElementById("header-h1").style.opacity = "1";
