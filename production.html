@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
+	<meta name="viewport" content="width=680, initial-scale=1">
 	<title>evenBits 亿万比特 — 青少年极客大会 2015</title>
 	<link rel="favicon shortcut icon" href="">
 	<link rel="apple-touch-icon" href="">
@@ -33,9 +34,13 @@
 	};
 	</script>
 	<style type="text/css">
-	@-webkit-keyframes hquos {
+	/*@-webkit-keyframes hquos {
 		from { padding: 0 0; }
 		to { padding: 0 12px; }
+	}*/
+	@-webkit-keyframes waves {
+		0% { background-position: 0px 0px; }
+		100% { background-position: 300px 0px; }
 	}
 	</style>
 	<style type="text/css">
@@ -126,7 +131,7 @@
 	section.global {
 	}
 	.global-in {
-		max-width: 1000px;
+		max-width: 680px;
 		padding: 0;
 		margin: 0 auto;
 	}
@@ -147,7 +152,7 @@
 	.global p {
 		text-align: center;
 
-		width: 780px;
+		width: 100%;
 		padding: 4px 0;
 		margin: 0 auto;
 	}
@@ -245,6 +250,9 @@
 		background-size: 300px 44px;
 
 		height: 100px;
+		-webkit-animation: waves 6s infinite;
+		-webkit-animation-timing-function: linear;
+		-webkit-animation-direction: normal;
 	}
 	section#play img.section-top-or-bottom-image {
 		box-shadow: #000 0 10px 0 5px;
@@ -506,7 +514,7 @@
 						</ul>
 					</div>
 					<div class="copyright" onclick="showCoreTeamMembers()">
-						© 2014 evenMedia Foundation. Designed by Joy Neop.<br />组委会保留本次大会最终解释权
+						© 2014 Designed by Joy Neop.<br />组委会保留本次大会最终解释权
 					</div>
 					<div class="core-team" id="core-team">
 						<div class="core-team-member">
