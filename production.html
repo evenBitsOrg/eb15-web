@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="http://joyneop.github.io/fonts/font-awesome.css">
 	<script type="text/javascript">
 	function browserSizeChange() {
+		browserSizeChange();
 		document.getElementById("header").style.height = (window.innerHeight-240) + "px";
 	}
 	function docDidLoad() {
@@ -540,6 +541,7 @@
 	<script type="text/javascript">
 	(function(){
 		window.onresize = browserSizeChange;
+		browserSizeChange();
 		window.setTimeout(docDidLoad, 800);
 	})();
 	</script>
