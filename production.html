@@ -35,20 +35,20 @@
 	};
 	</script>
 	<style type="text/css">
-	@media screen and (max-width: 740px) {
+	@media screen and (max-width: 690px) {
 		body {
-			font-size: 12px;
+			font-size: 13px;
 		}
 		.global-in {
-			max-width: 100%;
+			width: 100%;
 		}
 	}
-	@media screen and (min-width: 741px) {
+	@media screen and (min-width: 691px) {
 		body {
 			font-size: 18px;
 		}
 		.global-in {
-			max-width: 680px;
+			width: 680px;
 		}
 	}
 	</style>
@@ -195,8 +195,7 @@
 		text-align: center;
 		background: #000;
 
-		padding: 0;
-		height: 0px;
+		padding: 20px 0;
 		overflow: hidden;
 		transition: none;
 	}
@@ -311,7 +310,6 @@
 		font-weight: 300;
 		text-align: center;
 
-		/*width: 330px;*/
 		width: 50%;
 		padding: 9px 0;
 	}
@@ -327,19 +325,12 @@
 	}
 	input[type="email"] {
 		font-family: 'Play', 'GillSans-Light', 'Gill Sans Light', 'Gill Sans', 'Myriad Pro', 'Myriad Set Pro', 'Myriad', 'Myriad Set', Myriad, 'Open Sans', 'Helvetica Neue', Helvetica, 'Lantinghei SC', 'Lantinghei TC', 'Hiragino Sans GB', 'NotoSansCJKsc-Light', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Source Han Sans CJK', 'Noto Sans CJK', 'Source Han Sans JP', 'Noto Sans CJK JP', 'Source Han Sans', 'Noto Sans CJK', 'Hiragino Kaku Gothic Pro', Hiragino, sans-serif;
-		font-size: 16px;
+		font-size: 0.9;
 		color: #555;
 		border: 1px solid rgba(0, 0, 0, 0.15555);
 		border-radius: 3px;
 		outline: none;
 		box-shadow: inset rgba(0, 0, 0, 0.09777) 0 1px 2px 0;
-
-		display: inline-block;
-		box-sizing: border-box;
-		width: 370px;
-		height: 36px;
-		padding: 4px 8px;
-		margin: 0 20px 0 0;
 	}
 	input[type="email"]:focus {
 		outline: none;
@@ -414,6 +405,36 @@
 	input[disabled] {
 		background: rgba(255, 255, 255, 0.0222222);
 		box-shadow: none;
+	}
+	</style>
+	<style type="text/css">
+	@media screen and (max-width: 690px) {
+		section#gsn img.section-title-image {
+			width: 100%;
+			max-width: 550px;
+		}
+		#input-email {
+			display: inline-block;
+			box-sizing: border-box;
+			width: 100%;
+			height: 36px;
+			padding: 4px 8px;
+			margin: 0 20px 0 0;
+		}
+	}
+	@media screen and (min-width: 691px) {
+		section#gsn img.section-title-image {
+			max-width: 550px;
+			height:  420px;
+		}
+		#input-email {
+			display: inline-block;
+			box-sizing: border-box;
+			width: 370px;
+			height: 36px;
+			padding: 4px 8px;
+			margin: 0 20px 0 0;
+		}
 	}
 	</style>
 	<script type="text/javascript" src="main.js"></script>
