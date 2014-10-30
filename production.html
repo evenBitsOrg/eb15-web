@@ -167,6 +167,9 @@
 		padding: 0.2222222222em 0;
 		margin: 0 auto;
 	}
+	.global p > span {
+		display: inline-block;
+	}
 	footer.global {
 		padding: 30px 0 0;
 	}
@@ -472,8 +475,8 @@
 					<div class="section-top-or-bottom-image"></div>
 					<div class="global-in">
 						<h2>每一比特中的熵</h2>
-						<p>要成为码农王的男人，颈椎保健是头等大事。</p>
-						<p>还有读书就业、培育下一代小极客。以及更多关于未来发展的小抄条。</p>
+						<p><span>要成为码农王的男人，</span><span>颈椎保健是头等大事。</span></p>
+						<p><span>还有读书就业、培育下一代小极客。</span><span>以及更多关于未来发展的小抄条。</span></p>
 						<div class="global-in mini-box">
 							<h3>Featured Speeches</h3>
 							<table>
@@ -512,8 +515,8 @@
 					<div class="global-in">
 						<img class="section-title-image" src="gsn.jpg">
 						<h2>极客今晚留下来</h2>
-						<p>被命运召集起来的骚年们，相聚<del>冬木市（划掉）</del>宁波市。</p>
-						<p>今晚，两大抑止力、五大魔法纠缠于此，开启根源之涡，通向全部的过去与未来。</p>
+						<p><span>被命运召集起来的骚年们，</span><span>相聚<del>冬木市（划掉）</del>宁波市。</span></p>
+						<p><span>今晚，两大抑止力、五大魔法纠缠于此，</span><span>开启根源之涡，通向全部的过去与未来。</span></p>
 						<div class="global-in mini-box">
 							<h3>Featured Activities</h3>
 							<table>
@@ -532,7 +535,7 @@
 									</tr>
 									<tr>
 										<td>黑客马拉松组队非诚勿扰</td>
-										<td><del>勇敢的少年快去穿上女装</del></td>
+										<td><del>勇敢的骚年快去穿上女装</del></td>
 									</tr>
 								</tbody>
 							</table>
@@ -550,10 +553,13 @@
 						<p>留下邮箱地址，当开放预订时即可收到邮件邀请。</p>
 						<p><del>其实后台还没搭起来，不要上当了（ 233</del></p>
 						<div class="form-preorder">
-							<input type="email" placeholder="dudulu@sern.org" id="input-email" datastate="000" autocomplete autocapitalize="none" autocorrect="off" spellcheck="off">
+							<input type="email" placeholder="dudulu@sern.org" id="input-email" datastate="000" autocomplete autocapitalize="none" autocorrect="off" spellcheck="false">
 							<button type="button" class="btn btn-submit" id="submit-email-preorder" onclick="submitEmailPreorder()">提交</button>
 						</div>
 						<div class="message-line" id="email-preorder-server-back-message"></div>
+						<p><span>人呢最重要的就是开心。</span></p>
+						<p><span>无论是否把自己定义成 geek</span><span>来玩玩也是好的嘛。</span></p>
+						<p><span><del>我们是要做中国最大的青少年宅圈技术圈同性交友活动的男人。</del></span></p>
 					</div>
 				</section>
 				<footer class="global" id="footer">
