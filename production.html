@@ -76,6 +76,12 @@
 		height: 100%;
 		padding: 17% 0 14%;
 	}
+	header.global .inside-global-flex {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		margin: -5em 0 0 0;
+	}
 	header.global h1, header.global h2 {
 		font-weight: 400;
 		text-align: center;
@@ -128,13 +134,6 @@
 		font-size: 1em;
 		font-style: normal;
 		text-align: center;
-	}
-	header.global .inside-global-flex {
-		position: absolute;
-		top: 35%;
-		left: 0;
-		width: 100%;
-		margin: -5em 0 0 0;
 	}
 	#main {
 		font-family: 'Myriad Pro', 'Myriad Set Pro', 'Myriad', 'Myriad Set', Myriad, 'Open Sans', 'Helvetica Neue', Helvetica, 'Lantinghei SC', 'Lantinghei TC', 'Hiragino Sans GB', 'NotoSansCJKsc-Light', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Source Han Sans CJK', 'Noto Sans CJK', 'Source Han Sans JP', 'Noto Sans CJK JP', 'Source Han Sans', 'Noto Sans CJK', 'Hiragino Kaku Gothic Pro', Hiragino, sans-serif;
@@ -405,6 +404,9 @@
 	</style>
 	<style type="text/css">
 	@media screen and (max-width: 690px) {
+		header.global .inside-global-flex {
+			top: 1em;
+		}
 		section#gsn img.section-title-image {
 			width: 100%;
 			max-width: 550px;
@@ -422,6 +424,9 @@
 		}
 	}
 	@media screen and (min-width: 691px) {
+		header.global .inside-global-flex {
+			top: 38%;
+		}
 		section#gsn img.section-title-image {
 			max-width: 550px;
 			height:  420px;
