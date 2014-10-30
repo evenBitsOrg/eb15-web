@@ -2,7 +2,8 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=700, initial-scale=">
+	<!-- <meta name="viewport" content="width=700, initial-scale=1"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>evenBits 亿万比特 — 青少年极客大会 2015</title>
 	<link rel="favicon shortcut icon" href="">
 	<link rel="apple-touch-icon" href="">
@@ -11,11 +12,11 @@
 	<link rel="stylesheet" type="text/css" href="http://joyneop.github.io/fonts/font-awesome.css">
 	<script type="text/javascript">
 	var initialWidth = window.innerWidth;
-	var firstTimeDetermineSize = true;
+	var firstTimeDetermineViewportSize = true;
 	function browserSizeChange() {
-		if (firstTimeDetermineSize || (initialWidth != window.innerWidth)) {
+		if (firstTimeDetermineViewportSize || (initialWidth != window.innerWidth)) {
 			document.getElementById("header").style.height = (window.innerHeight-240) + "px";
-			firstTimeDetermineSize = false;
+			firstTimeDetermineViewportSize = false;
 		};
 	}
 	function docDidLoad() {
@@ -128,7 +129,7 @@
 	}
 	.global-in {
 		max-width: 680px;
-		padding: 0;
+		padding: 0 10px;
 		margin: 0 auto;
 	}
 	.global-in h2 {
@@ -148,7 +149,7 @@
 	.global p {
 		text-align: center;
 
-		width: 660px;
+		width: 100%;
 		padding: 4px 0;
 		margin: 0 auto;
 	}
@@ -259,7 +260,7 @@
 		background: #000;
 	}
 	section#gsn img.section-title-image {
-		width: 550px;
+		max-width: 550px;
 		height:  420px;
 	}
 	section#gsn img.section-top-or-bottom-image {
@@ -281,9 +282,11 @@
 	section table {
 		border-collapse: collapse;
 
+		width: 100%;
 		margin: 10px auto;
 	}
 	section table tr {
+		width: 100%;
 		border-top: 1px solid #FFF;
 		border-bottom: 1px solid #FFF;
 	}
@@ -292,7 +295,8 @@
 		font-weight: 300;
 		text-align: center;
 
-		width: 330px;
+		/*width: 330px;*/
+		width: 50%;
 		padding: 9px 0;
 	}
 	section table td:first-child {
