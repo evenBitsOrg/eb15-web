@@ -57,9 +57,24 @@
 		0% { background-position: 0px 0px; }
 		100% { background-position: 300px 0px; }
 	}
+	@-moz-keyframes waves {
+		0% { background-position: 0px 0px; }
+		100% { background-position: 300px 0px; }
+	}
+	@-ms-keyframes waves {
+		0% { background-position: 0px 0px; }
+		100% { background-position: 300px 0px; }
+	}
+	@keyframes waves {
+		0% { background-position: 0px 0px; }
+		100% { background-position: 300px 0px; }
+	}
 	</style>
 	<style type="text/css">
 	* {
+		-webkit-transition: all 750ms ease;
+		-moz-transition: all 750ms ease;
+		-ms-transition: all 750ms ease;
 		transition: all 750ms ease;
 		box-sizing: border-box;
 	}
