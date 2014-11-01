@@ -125,9 +125,6 @@
 	header.global h2::before, header.global h2::after {
 		display: inline-block;
 		opacity: 0.4;
-		-webkit-animation: hquos 1.1s infinite;
-		-webkit-animation-timing-function: ease-in;
-		-webkit-animation-direction: alternate;
 	}
 	header.global h2::before {
 		content: "›";
@@ -284,6 +281,15 @@
 		-webkit-animation: waves 6s infinite;
 		-webkit-animation-timing-function: linear;
 		-webkit-animation-direction: normal;
+		-moz-animation: waves 6s infinite;
+		-moz-animation-timing-function: linear;
+		-moz-animation-direction: normal;
+		-ms-animation: waves 6s infinite;
+		-ms-animation-timing-function: linear;
+		-ms-animation-direction: normal;
+		animation: waves 6s infinite;
+		animation-timing-function: linear;
+		animation-direction: normal;
 	}
 	section#play img.section-top-or-bottom-image {
 		margin-bottom: -3px;
