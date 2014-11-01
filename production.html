@@ -2,16 +2,60 @@
 <html>
 <head>
 	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>evenBits 亿万比特 — 青少年极客大会 2015</title>
-	<link rel="favicon shortcut icon" href="">
-	<link rel="apple-touch-icon" href="">
+	<link rel="favicon" href="favicon.ico">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 	<link rel="stylesheet" type="text/css" href="http://joyneop.github.io/fonts/play.css">
 	<link rel="stylesheet" type="text/css" href="http://joyneop.github.io/fonts/open-sans.css">
 	<link rel="stylesheet" type="text/css" href="http://joyneop.github.io/fonts/font-awesome.css">
+	<script type="text/javascript">
+	var initialWidth = window.innerWidth;
+	var firstTimeDetermineViewportSize = true;
+	function browserSizeChange() {
+		if (firstTimeDetermineViewportSize || (initialWidth != window.innerWidth)) {
+			document.getElementById("header").style.height = (window.innerHeight-240) + "px";
+			firstTimeDetermineViewportSize = false;
+		};
+	}
+	function docDidLoad() {
+		document.getElementById("header-h1").style.opacity = "1";
+		document.getElementById("header-h1").style.top = "0";
+		window.setTimeout(function(){
+			document.getElementById("header-h2").style.opacity = "1";
+			document.getElementById("header-h2").style.top = "0";
+		}, 800);
+		window.setTimeout(function(){
+			document.getElementById("event-meta-info").style.opacity = "1";
+		}, 1600);
+		window.setTimeout(function(){
+			document.getElementById("main").style.opacity = "1";
+		}, 2400);
+	};
+	</script>
 	<style type="text/css">
-	@-webkit-keyframes hquos {
-		from { padding: 0 0; }
-		to { padding: 0 12px; }
+	@media screen and (max-width: 750px) {
+		body {
+			font-size: 13px;
+		}
+		.global-in {
+			width: 100%;
+		}
+	}
+	@media screen and (min-width: 751px) {
+		body {
+			font-size: 18px;
+		}
+		.global-in {
+			width: 680px;
+		}
+	}
+	</style>
+	<style type="text/css">
+	@-webkit-keyframes waves {
+		0% { background-position: 0px 0px; }
+		100% { background-position: 300px 0px; }
 	}
 	</style>
 	<style type="text/css">
@@ -22,9 +66,8 @@
 	body {
 		font-family: 'Play', 'GillSans-Light', 'Gill Sans Light', 'Gill Sans', 'Myriad Pro', 'Myriad Set Pro', 'Myriad', 'Myriad Set', Myriad, 'Open Sans', 'Helvetica Neue', Helvetica, 'Lantinghei SC', 'Lantinghei TC', 'Hiragino Sans GB', 'NotoSansCJKsc-Light', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Source Han Sans CJK', 'Noto Sans CJK', 'Source Han Sans JP', 'Noto Sans CJK JP', 'Source Han Sans', 'Noto Sans CJK', 'Hiragino Kaku Gothic Pro', Hiragino, sans-serif;
 		font-weight: 400;
-		font-size: 18px;
 		color: #494949;
-		background: #000;
+		background: #FFF;
 
 		padding: 0;
 		margin: 0;
@@ -32,6 +75,11 @@
 	header.global {
 		height: 100%;
 		padding: 17% 0 14%;
+	}
+	header.global .inside-global-flex {
+		position: absolute;
+		left: 0;
+		width: 100%;
 	}
 	header.global h1, header.global h2 {
 		font-weight: 400;
@@ -43,7 +91,7 @@
 		opacity: 0;
 	}
 	header.global h1 {
-		font-size: 6em;
+		font-size: 5em;
 		letter-spacing: -4px;
 
 		top: -25px;
@@ -79,19 +127,12 @@
 		text-align: center;
 		opacity: 0;
 
-		margin: 4em 0 0 0;
+		margin: 2.5em 0 0 0;
 	}
 	header.global #event-meta-info * {
 		font-size: 1em;
 		font-style: normal;
 		text-align: center;
-	}
-	header.global .inside-global-flex {
-		position: absolute;
-		top: 50%;
-		left: 0;
-		width: 100%;
-		margin: -270px 0 0 0;
 	}
 	#main {
 		font-family: 'Myriad Pro', 'Myriad Set Pro', 'Myriad', 'Myriad Set', Myriad, 'Open Sans', 'Helvetica Neue', Helvetica, 'Lantinghei SC', 'Lantinghei TC', 'Hiragino Sans GB', 'NotoSansCJKsc-Light', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Source Han Sans CJK', 'Noto Sans CJK', 'Source Han Sans JP', 'Noto Sans CJK JP', 'Source Han Sans', 'Noto Sans CJK', 'Hiragino Kaku Gothic Pro', Hiragino, sans-serif;
@@ -100,11 +141,9 @@
 	</style>
 	<style type="text/css">
 	section.global {
-		padding: 20px 0 100px;
 	}
 	.global-in {
-		max-width: 1000px;
-		padding: 80px 0 0;
+		padding: 0 10px;
 		margin: 0 auto;
 	}
 	.global-in h2 {
@@ -122,17 +161,21 @@
 		margin: 0;
 	}
 	.global p {
+		line-height: 2em;
 		text-align: center;
 
-		width: 780px;
-		padding: 4px 0;
+		width: 100%;
+		padding: 0;
 		margin: 0 auto;
+	}
+	.global p > span {
+		display: inline-block;
 	}
 	footer.global {
 		padding: 30px 0 0;
 	}
 	footer.global .copyright {
-		font-size: 14px;
+		font-size: 0.7777777777em;
 		text-align: center;
 
 		padding: 10px 0 30px;
@@ -154,19 +197,20 @@
 		text-align: center;
 		background: #000;
 
-		padding: 0;
-		height: 0px;
-		overflow: hidden;
+		display: none;
+		padding: 20px 0;
 		transition: none;
 	}
 	footer.global .core-team p {
 		font-size: 14px;
 	}
-	footer.global .core-team-member {
+	footer.global .core-team p span {
 		display: inline-block;
-		width: 110px;
+	}
+	footer.global .core-team-member {
+		width: 180px;
 		padding: 10px 0 15px;
-		margin: 0 14px;
+		margin: 0 0 0 24px;
 	}
 	footer.global .core-team-member-link {
 		color: #FFF;
@@ -198,31 +242,55 @@
 	footer.global .core-team-member-title {
 		font-size: 14px;
 	}
+	img.section-title-image {
+		display: block;
+		padding: 0;
+		margin: 0 auto;
+	}
+	img.section-top-or-bottom-image {
+		display: block;
+		padding: 0;
+		margin: 0;
+		width: 100%;
+		height: auto;
+	}
 	</style>
 	<style type="text/css">
 	section#play {
 		color: #FFF;
 		text-shadow: rgba(0, 0, 0, 0.0877) 0 1px 0;
-		background: #32A7E0 url(wave.png) top repeat-x scroll;
-		background-size: 300px 44px;
+		background: #32A7E0;
+	}
+	section#play div.section-top-or-bottom-image {
+		background: url(waves.png) top repeat-x scroll;
+
+		height: 100px;
+		margin-top: -3px;
+		-webkit-animation: waves 6s infinite;
+		-webkit-animation-timing-function: linear;
+		-webkit-animation-direction: normal;
+	}
+	section#play img.section-top-or-bottom-image {
+		margin-bottom: -3px;
 	}
 	section#gsn {
 		color: #FFF;
 		background: #000;
 	}
-	section#gsn {
-		background: #000 url(gsn.jpg) top no-repeat scroll;
-		background-size: 550px 420px;
-		background-origin: content-box;
+	section#gsn img.section-title-image {
 	}
-	section#gsn h2 {
-		padding-top: 320px;
+	section#gsn img.section-top-or-bottom-image {
+		margin-bottom: -3px;
 	}
 	section#order {
 		color: #444;
 		background: #F8F8F8;
 	}
+	section#order .global-in {
+		padding: 60px 0;
+	}
 	.mini-box {
+		text-transform: uppercase;
 		padding: 80px 0;
 	}
 	.feedback {
@@ -230,18 +298,20 @@
 	section table {
 		border-collapse: collapse;
 
+		width: 100%;
 		margin: 10px auto;
 	}
 	section table tr {
+		width: 100%;
 		border-top: 1px solid #FFF;
 		border-bottom: 1px solid #FFF;
 	}
 	section table td {
-		font-size: 18px;
+		font-size: 1em;
 		font-weight: 300;
 		text-align: center;
 
-		width: 330px;
+		width: 50%;
 		padding: 9px 0;
 	}
 	section table td:first-child {
@@ -250,25 +320,20 @@
 	</style>
 	<style type="text/css">
 	.form-preorder {
-		width: 480px;
+		width: 100%;
+		max-width: 480px;
+		height: 128px;
 		padding: 20px 0;
 		margin: 0 auto;
 	}
 	input[type="email"] {
 		font-family: 'Play', 'GillSans-Light', 'Gill Sans Light', 'Gill Sans', 'Myriad Pro', 'Myriad Set Pro', 'Myriad', 'Myriad Set', Myriad, 'Open Sans', 'Helvetica Neue', Helvetica, 'Lantinghei SC', 'Lantinghei TC', 'Hiragino Sans GB', 'NotoSansCJKsc-Light', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Source Han Sans CJK', 'Noto Sans CJK', 'Source Han Sans JP', 'Noto Sans CJK JP', 'Source Han Sans', 'Noto Sans CJK', 'Hiragino Kaku Gothic Pro', Hiragino, sans-serif;
-		font-size: 16px;
+		font-size: 0.9em;
 		color: #555;
 		border: 1px solid rgba(0, 0, 0, 0.15555);
 		border-radius: 3px;
 		outline: none;
 		box-shadow: inset rgba(0, 0, 0, 0.09777) 0 1px 2px 0;
-
-		display: inline-block;
-		box-sizing: border-box;
-		width: 370px;
-		height: 36px;
-		padding: 4px 8px;
-		margin: 0 20px 0 0;
 	}
 	input[type="email"]:focus {
 		outline: none;
@@ -282,7 +347,6 @@
 		border-radius: 3px;
 		cursor: pointer;
 
-		display: inline-block;
 		box-sizing: border-box;
 		height: 36px;
 		padding: 3px 21px 0;
@@ -295,6 +359,8 @@
 		background: #0CBFFA;
 		border: 1px solid rgba(0, 0, 0, 0.14);
 		box-shadow: none;
+
+		display: inline-block;
 	}
 	.btn.btn-submit:active {
 		background: #0FA4D6;
@@ -322,9 +388,6 @@
 	.btn.btn-email:hover {
 		border: 2px solid rgba(255, 255, 255, 1);
 	}
-	#submit-email-preorder {
-		float: right;
-	}
 	.message-line {
 		font-size: 14px;
 		text-align: center;
@@ -345,9 +408,64 @@
 		box-shadow: none;
 	}
 	</style>
+	<style type="text/css">
+	@media screen and (max-width: 750px) {
+		header.global .inside-global-flex {
+			top: 1em;
+			margin: 0;
+		}
+		section#gsn img.section-title-image {
+			width: 100%;
+			max-width: 550px;
+		}
+		#input-email {
+			display: block;
+			box-sizing: border-box;
+			width: 86%;
+			height: 36px;
+			padding: 4px 8px;
+			margin: 1em auto;
+		}
+		#submit-email-preorder {
+			display: block;
+			margin: 1em auto;
+		}
+		section#play div.section-top-or-bottom-image {
+			background-size: 150px 22px;
+		}
+	}
+	@media screen and (min-width: 751px) {
+		header.global .inside-global-flex {
+			top: 50%;
+			margin: -10em 0 0 0;
+		}
+		section#gsn img.section-title-image {
+			max-width: 550px;
+			height:  420px;
+		}
+		#input-email {
+			display: inline-block;
+			float: left;
+			box-sizing: border-box;
+			width: 370px;
+			height: 36px;
+			padding: 4px 8px;
+			margin: 0 20px 0 0;
+		}
+		#submit-email-preorder {
+			float: right;
+		}
+		section#play div.section-top-or-bottom-image {
+			background-size: 300px 44px;
+		}
+		footer.global .core-team-member {
+			display: inline-block;
+		}
+	}
+	</style>
 	<script type="text/javascript" src="main.js"></script>
 </head>
-<body>
+<body onload="docDidLoad()">
 	<div class="cont">
 		<div class="content">
 			<header class="global" id="header">
@@ -362,10 +480,11 @@
 			</header>
 			<div id="main">
 				<section class="global" id="play">
+					<div class="section-top-or-bottom-image"></div>
 					<div class="global-in">
 						<h2>每一比特中的熵</h2>
-						<p>要成为码农王的男人，颈椎保健是头等大事。</p>
-						<p>还有读书就业、培育下一代小极客。以及更多关于未来发展的小抄条。</p>
+						<p><span>要成为码农王的男人，</span><span>颈椎保健是头等大事。</span></p>
+						<p><span>还有读书就业、培育下一代小极客。</span><span>以及更多关于未来发展的小抄条。</span></p>
 						<div class="global-in mini-box">
 							<h3>Featured Speeches</h3>
 							<table>
@@ -394,17 +513,18 @@
 							</table>
 						</div>
 						<div class="feedback">
-							<p>分享你的演讲吧！</p>
+							<p>要来上台演讲么骚年？</p>
 							<a href="mailto:admin@geek-stay-night.com" class="btn btn-email"><i class="fa fa-envelope"></i></a>
 						</div>
 					</div>
+					<img class="section-top-or-bottom-image" src="black-triangle.svg">
 				</section>
 				<section class="global" id="gsn">
 					<div class="global-in">
-						<div class="gsn-logo"></div>
+						<img class="section-title-image" src="gsn.jpg">
 						<h2>极客今晚留下来</h2>
-						<p>被命运召集起来的骚年们，相聚<del>冬木市（划掉）</del>宁波市。</p>
-						<p>今晚，两大抑止力、五大魔法纠缠于此，开启根源之涡，通向全部的过去与未来。</p>
+						<p><span>被命运召集起来的骚年们，</span><span>相聚<del>冬木市（划掉）</del>宁波市。</span></p>
+						<p><span>今晚，两大抑止力、五大魔法纠缠于此，</span><span>开启根源之涡，通向全部的过去与未来。</span></p>
 						<div class="global-in mini-box">
 							<h3>Featured Activities</h3>
 							<table>
@@ -423,7 +543,7 @@
 									</tr>
 									<tr>
 										<td>黑客马拉松组队非诚勿扰</td>
-										<td><del>勇敢的少年快去穿上女装</del></td>
+										<td><del>勇敢的骚年快去穿上女装</del></td>
 									</tr>
 								</tbody>
 							</table>
@@ -433,6 +553,7 @@
 							<a href="mailto:admin@geek-stay-night.com" class="btn btn-email"><i class="fa fa-envelope"></i></a>
 						</div>
 					</div>
+					<img class="section-top-or-bottom-image" src="light-gray-triangle.svg">
 				</section>
 				<section class="global" id="order">
 					<div class="global-in">
@@ -440,9 +561,13 @@
 						<p>留下邮箱地址，当开放预订时即可收到邮件邀请。</p>
 						<p><del>其实后台还没搭起来，不要上当了（ 233</del></p>
 						<div class="form-preorder">
-							<button type="button" class="btn btn-submit" id="submit-email-preorder" onclick="submitEmailPreorder()">提交</button><input type="email" placeholder="dudulu@sern.org" id="input-email" datastate="000" autocomplete autocapitalize="none" autocorrect="off" spellcheck="off">
+							<input type="email" placeholder="dudulu@sern.org" id="input-email" datastate="000" autocomplete autocapitalize="none" autocorrect="off" spellcheck="false">
+							<button type="button" class="btn btn-submit" id="submit-email-preorder" onclick="submitEmailPreorder()">提交</button>
 						</div>
 						<div class="message-line" id="email-preorder-server-back-message"></div>
+						<p><span>人呢最重要的就是开心。</span></p>
+						<p><span>无论是否把自己定义成 geek，</span><span>来玩玩也是好的嘛。</span></p>
+						<p><span><del>我们是要做中国最大的青少年宅圈技术圈同性交友活动的男人。</del></span></p>
 					</div>
 				</section>
 				<footer class="global" id="footer">
@@ -458,7 +583,7 @@
 						</ul>
 					</div>
 					<div class="copyright" onclick="showCoreTeamMembers()">
-						© 2014 evenMedia Foundation. Designed by Joy Neop.<br />组委会保留本次大会最终解释权
+						© 2014 Designed by Joy Neop<br />组委会保留本次大会最终解释权
 					</div>
 					<div class="core-team" id="core-team">
 						<div class="core-team-member">
@@ -466,7 +591,7 @@
 								<img class="core-team-member-avatar" src="avatar-1.jpg">
 								<div class="core-team-member-meta-info">
 									<span class="core-team-member-name">钉子</span>
-									<span class="core-team-member-title">Prelate</span>
+									<span class="core-team-member-title">Prelate - 零号机</span>
 								</div>
 							</a>
 						</div>
@@ -475,7 +600,7 @@
 								<img class="core-team-member-avatar" src="avatar-2.jpg">
 								<div class="core-team-member-meta-info">
 									<span class="core-team-member-name">laosb</span>
-									<span class="core-team-member-title">Archon</span>
+									<span class="core-team-member-title">Archon - 初号机</span>
 								</div>
 							</a>
 						</div>
@@ -484,40 +609,25 @@
 								<img class="core-team-member-avatar" src="avatar-3.jpg">
 								<div class="core-team-member-meta-info">
 									<span class="core-team-member-name">JN</span>
-									<span class="core-team-member-title">Oracle</span>
+									<span class="core-team-member-title">Oracle - 二号机</span>
 								</div>
 							</a>
 						</div>
-						<p>GOD'S IN HIS HEAVEN. ALL'S RIGHT WITH THE WORLD.</p>
+						<p id="pippa-passes">
+							<span>GOD'S IN HIS HEAVEN.</span>
+							<span>ALL'S RIGHT WITH THE WORLD.</span>
+						</p>
 					</div>
 				</footer>
 			</div>
-<script type="text/javascript">
-(function(){
-	document.getElementById("header").style.height = (window.innerHeight-240) + "px";
-})();
-window.setTimeout(function(){
-	window.setTimeout(function(){
-		document.body.style.backgroundColor = "#FFF";
-	}, 800);
-	window.setTimeout(function(){
-		document.body.style.color = "#494949";
-	}, 1200);
-	window.setTimeout(function(){
-		document.getElementById("header-h1").style.opacity = "1";
-		document.getElementById("header-h1").style.top = "0";
-	}, 1200);
-	window.setTimeout(function(){
-		document.getElementById("header-h2").style.opacity = "1";
-		document.getElementById("header-h2").style.top = "0";
-	}, 1600);
-	window.setTimeout(function(){
-		document.getElementById("event-meta-info").style.opacity = "1";
-		document.getElementById("main").style.opacity = "1";
-	}, 2400);
-}, 300);
-</script>
 		</div>
 	</div>
+	<script type="text/javascript">
+	(function(){
+		browserSizeChange();
+		window.onresize = browserSizeChange;
+		window.setTimeout(docDidLoad, 800);
+	})();
+	</script>
 </body>
 </html>

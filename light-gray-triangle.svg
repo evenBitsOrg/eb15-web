@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="600px" height="50px" viewBox="0 0 600 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>light-gray-triangle</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="light-gray-triangle" sketch:type="MSArtboardGroup" fill="#F8F8F8">
+            <path d="M300,50 L0,50 L0,0 L300,46.875 L600,0 L600,50 L300,50 Z" id="Rectangle-1" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>
