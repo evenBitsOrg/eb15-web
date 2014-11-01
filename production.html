@@ -7,9 +7,9 @@
 	<link rel="favicon" href="favicon.ico">
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
-	<link rel="stylesheet" type="text/css" href="http://joyneop.github.io/fonts/play.css">
-	<link rel="stylesheet" type="text/css" href="http://joyneop.github.io/fonts/open-sans.css">
-	<link rel="stylesheet" type="text/css" href="http://joyneop.github.io/fonts/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="/fonts/play.css">
+	<link rel="stylesheet" type="text/css" href="/fonts/open-sans.css">
+	<link rel="stylesheet" type="text/css" href="/fonts/font-awesome.css">
 	<script type="text/javascript">
 	var initialWidth = window.innerWidth;
 	var firstTimeDetermineViewportSize = true;
@@ -57,9 +57,24 @@
 		0% { background-position: 0px 0px; }
 		100% { background-position: 300px 0px; }
 	}
+	@-moz-keyframes waves {
+		0% { background-position: 0px 0px; }
+		100% { background-position: 300px 0px; }
+	}
+	@-ms-keyframes waves {
+		0% { background-position: 0px 0px; }
+		100% { background-position: 300px 0px; }
+	}
+	@keyframes waves {
+		0% { background-position: 0px 0px; }
+		100% { background-position: 300px 0px; }
+	}
 	</style>
 	<style type="text/css">
 	* {
+		-webkit-transition: all 750ms ease;
+		-moz-transition: all 750ms ease;
+		-ms-transition: all 750ms ease;
 		transition: all 750ms ease;
 		box-sizing: border-box;
 	}
@@ -110,9 +125,6 @@
 	header.global h2::before, header.global h2::after {
 		display: inline-block;
 		opacity: 0.4;
-		-webkit-animation: hquos 1.1s infinite;
-		-webkit-animation-timing-function: ease-in;
-		-webkit-animation-direction: alternate;
 	}
 	header.global h2::before {
 		content: "›";
@@ -269,6 +281,15 @@
 		-webkit-animation: waves 6s infinite;
 		-webkit-animation-timing-function: linear;
 		-webkit-animation-direction: normal;
+		-moz-animation: waves 6s infinite;
+		-moz-animation-timing-function: linear;
+		-moz-animation-direction: normal;
+		-ms-animation: waves 6s infinite;
+		-ms-animation-timing-function: linear;
+		-ms-animation-direction: normal;
+		animation: waves 6s infinite;
+		animation-timing-function: linear;
+		animation-direction: normal;
 	}
 	section#play img.section-top-or-bottom-image {
 		margin-bottom: -3px;
