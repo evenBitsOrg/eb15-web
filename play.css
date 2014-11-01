@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Play'), url(//joyneop.github.io/fonts/Play.woff) format('woff'), url(//joyneop.xyz/fonts/Play.woff) format('woff'), url(/fonts/Play.woff) format('woff');
+}
+@font-face {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Play-Bold'), url(//joyneop.github.io/fonts/Play-Bold.woff) format('woff'), url(//joyneop.xyz/fonts/Play-Bold.woff) format('woff'), url(/fonts/Play-Bold.woff) format('woff');
+}
