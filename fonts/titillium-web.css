@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Titillium WebThin'), local('TitilliumWeb-Thin'), url(//joyneop.github.io/fonts/TitilliumWeb-Thin.woff) format('woff'), url(//joyneop.xyz/fonts/TitilliumWeb-Thin.woff) format('woff'), url(/fonts/TitilliumWeb-Thin.woff) format('woff');
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(//joyneop.github.io/fonts/TitilliumWeb-Light.woff) format('woff'), url(//joyneop.xyz/fonts/TitilliumWeb-Light.woff) format('woff'), url(/fonts/TitilliumWeb-Light.woff) format('woff');
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Titillium Web'), local('TitilliumWeb-Regular'), url(//joyneop.github.io/fonts/TitilliumWeb-Regular.woff) format('woff'), url(//joyneop.xyz/fonts/TitilliumWeb-Regular.woff) format('woff'), url(/fonts/TitilliumWeb-Regular.woff) format('woff');
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Titillium WebSemiBold'), local('TitilliumWeb-SemiBold'), url(//joyneop.github.io/fonts/TitilliumWeb-SemiBold.woff) format('woff'), url(//joyneop.xyz/fonts/TitilliumWeb-SemiBold.woff) format('woff'), url(/fonts/TitilliumWeb-SemiBold.woff) format('woff');
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Titillium WebBold'), local('TitilliumWeb-Bold'), url(//joyneop.github.io/fonts/TitilliumWeb-Bold.woff) format('woff'), url(//joyneop.xyz/fonts/TitilliumWeb-Bold.woff) format('woff'), url(/fonts/TitilliumWeb-Bold.woff) format('woff');
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Titillium WebBlack'), local('TitilliumWeb-Black'), url(//joyneop.github.io/fonts/TitilliumWeb-Black.woff) format('woff'), url(//joyneop.xyz/fonts/TitilliumWeb-Black.woff) format('woff'), url(/fonts/TitilliumWeb-Black.woff) format('woff');
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: italic;
+  font-weight: 200;
+  src: local('Titillium WebThin Italic'), local('TitilliumWeb-ThinItalic'), url(//joyneop.github.io/fonts/TitilliumWeb-ThinItalic.woff) format('woff'), url(//joyneop.xyz/fonts/TitilliumWeb-ThinItalic.woff) format('woff'), url(/fonts/TitilliumWeb-ThinItalic.woff) format('woff');
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Titillium WebLight Italic'), local('TitilliumWeb-LightItalic'), url(//joyneop.github.io/fonts/TitilliumWeb-LightItalic.woff) format('woff'), url(//joyneop.xyz/fonts/TitilliumWeb-LightItalic.woff) format('woff'), url(/fonts/TitilliumWeb-LightItalic.woff) format('woff');
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Titillium WebItalic'), local('TitilliumWeb-Italic'), url(//joyneop.github.io/fonts/TitilliumWeb-Italic.woff) format('woff'), url(//joyneop.xyz/fonts/TitilliumWeb-Italic.woff) format('woff'), url(/fonts/TitilliumWeb-Italic.woff) format('woff');
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Titillium WebSemiBold Italic'), local('TitilliumWeb-SemiBoldItalic'), url(//joyneop.github.io/fonts/TitilliumWeb-SemiBoldItalic.woff) format('woff'), url(//joyneop.xyz/fonts/TitilliumWeb-SemiBoldItalic.woff) format('woff'), url(/fonts/TitilliumWeb-SemiBoldItalic.woff) format('woff');
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Titillium WebBold Italic'), local('TitilliumWeb-BoldItalic'), url(//joyneop.github.io/fonts/TitilliumWeb-BoldItalic.woff) format('woff'), url(//joyneop.xyz/fonts/TitilliumWeb-BoldItalic.woff) format('woff'), url(/fonts/TitilliumWeb-BoldItalic.woff) format('woff');
+}
