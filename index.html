@@ -25,6 +25,7 @@
 		window.setTimeout(function(){
 			document.getElementById("header-h2").style.opacity = "1";
 			document.getElementById("header-h2").style.top = "0";
+			document.getElementById("header-desc").style.opacity = "0.9";
 		}, 800);
 		window.setTimeout(function(){
 			document.getElementById("event-meta-info").style.opacity = "1";
@@ -89,14 +90,14 @@
 	}
 	header.global {
 		height: 100%;
-		padding: 17% 0 14%;
+		padding: 15% 0 16%;
 	}
 	header.global .inside-global-flex {
 		position: absolute;
 		left: 0;
 		width: 100%;
 	}
-	header.global h1, header.global h2 {
+	header.global h1, header.global h2, header.global h3 {
 		font-weight: 400;
 		text-align: center;
 
@@ -145,6 +146,12 @@
 		font-size: 1em;
 		font-style: normal;
 		text-align: center;
+	}
+	header.global h3 {
+		font-size: 0.9em;
+		font-weight: 100;
+
+		top: 50px;
 	}
 	#main {
 		font-family: 'Titillium WebLight', 'Titillium Web', Titillium Web, 'Myriad Pro', 'Myriad Set Pro', 'Myriad', 'Myriad Set', Myriad, 'Open Sans', 'Helvetica Neue', Helvetica, 'Lantinghei SC', 'Lantinghei TC', 'Hiragino Sans GB', 'NotoSansCJKsc-Light', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Source Han Sans CJK', 'Noto Sans CJK', 'Source Han Sans JP', 'Noto Sans CJK JP', 'Source Han Sans', 'Noto Sans CJK', 'Hiragino Kaku Gothic Pro', Hiragino, sans-serif;
@@ -497,6 +504,7 @@
 						<address>Ningbo, China</address>
 						<time>July 27, 2015</time>
 					</div>
+					<h3 id="header-desc">极客的盛会，技术宅的狂欢。2015 夏，与我们一起聆听青春互联网的心跳。</h3>
 				</div>
 			</header>
 			<div id="main">
@@ -534,7 +542,7 @@
 							</table>
 						</div>
 						<div class="feedback">
-							<p>要来上台演讲么少年？</p>
+							<p>要来台上搞个大新闻么少年？</p>
 							<a href="mailto:event@evenbits.org" class="btn btn-email"><i class="fa fa-envelope"></i></a>
 						</div>
 					</div>
@@ -578,7 +586,7 @@
 				</section>
 				<section class="global" id="order">
 					<div class="global-in">
-						<h2>现在预订</h2>
+						<h2>念念不忘，必有回响</h2>
 						<p>留下邮箱地址，当开放预订时即可收到邮件邀请。</p>
 						<p><del>其实后台还没搭起来，不要上当了（ 233</del></p>
 						<div class="form-preorder">
@@ -592,8 +600,8 @@
 					</div>
 				</section>
 				<footer class="global" id="footer">
-					<div class="sponsor">
-						<p>最后还要感谢以下赞助商么么哒</p>
+					<div class="sponsor" style="display:none">
+						<p>最后还要感谢以下赞助商</p>
 						<ul>
 							<li><a href="http://shixiann.com/"><img src="sp1.png"></a></li>
 							<li><a href="http://shixiann.com/"><img src="sp2.png"></a></li>
