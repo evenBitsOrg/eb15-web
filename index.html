@@ -58,10 +58,6 @@
 		0% { background-position: 0px 0px; }
 		100% { background-position: 300px 0px; }
 	}
-	@-moz-keyframes waves {
-		0% { background-position: 0px 0px; }
-		100% { background-position: 300px 0px; }
-	}
 	@-ms-keyframes waves {
 		0% { background-position: 0px 0px; }
 		100% { background-position: 300px 0px; }
@@ -74,7 +70,6 @@
 	<style type="text/css">
 	* {
 		-webkit-transition: all 750ms ease;
-		-moz-transition: all 750ms ease;
 		-ms-transition: all 750ms ease;
 		transition: all 750ms ease;
 		box-sizing: border-box;
@@ -288,9 +283,6 @@
 		-webkit-animation: waves 6s infinite;
 		-webkit-animation-timing-function: linear;
 		-webkit-animation-direction: normal;
-		-moz-animation: waves 6s infinite;
-		-moz-animation-timing-function: linear;
-		-moz-animation-direction: normal;
 		-ms-animation: waves 6s infinite;
 		-ms-animation-timing-function: linear;
 		-ms-animation-direction: normal;
@@ -648,6 +640,11 @@
 	</div>
 	<script type="text/javascript">
 	(function(){
+		if (navigator.userAgent.indexOf("Gecko") != -1 && navigator.userAgent.indexOf("Firefox") != -1 && navigator.userAgent.indexOf("like Gecko") == -1) {
+			// If the browser is Firefox
+			document.getElementById("play").getElementsByClassName("section-top-or-bottom-image")[0].style.animation = "none";
+		};
+
 		browserSizeChange();
 		window.onresize = browserSizeChange;
 		window.setTimeout(docDidLoad, 800);
