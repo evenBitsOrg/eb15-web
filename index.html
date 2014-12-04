@@ -41,7 +41,6 @@
 			font-size: 13px;
 		}
 		.global-in {
-			width: 100%;
 		}
 	}
 	@media screen and (min-width: 751px) {
@@ -113,7 +112,7 @@
 		opacity: 0.5;
 	}
 	header.global h2 {
-		font-size: 1.5em;
+		font-size: 1.1em;
 		font-weight: 100;
 
 		top: -10px;
@@ -123,10 +122,10 @@
 		opacity: 0.4;
 	}
 	header.global h2::before {
-		content: "›";
+		/*content: "›";*/
 	}
 	header.global h2::after {
-		content: "‹";
+		/*content: "‹";*/
 	}
 	header.global h2 span {
 		padding: 0 10px;
@@ -160,7 +159,7 @@
 		padding: 0 10px;
 		margin: 0 auto;
 	}
-	.global-in h2 {
+	.global h2 {
 		font-size: 2em;
 	}
 	.global-in h3 {
@@ -178,7 +177,6 @@
 		line-height: 2em;
 		text-align: center;
 
-		width: 100%;
 		padding: 0;
 		margin: 0 auto;
 	}
@@ -316,26 +314,33 @@
 	.feedback {
 	}
 	section table {
-		border-collapse: collapse;
-
-		width: 100%;
 		margin: 10px auto;
 	}
 	section table tr {
-		width: 100%;
-		border-top: 1px solid #FFF;
-		border-bottom: 1px solid #FFF;
+	}
+	section table th {
+		font-size: 1.1em;
+		text-align: left;
+
+		padding: 10px 0 0;
 	}
 	section table td {
-		font-size: 1em;
+		font-size: 0.875em;
 		font-weight: 300;
-		text-align: center;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
 		width: 50%;
-		padding: 9px 0;
+		padding: 9px 0 12px;
 	}
-	section table td:first-child {
-		border-right: 1px solid rgba(255, 255, 255, 0.2222);
+	section#gsn table {
+		border-collapse: collapse;
+	}
+	section#gsn table td {
+		text-align: center;
+		border-bottom: 1px solid #FFF;
+	}
+	section#gsn table td:first-child {
+		/*border-right: 1px solid rgba(255, 255, 255, 0.2);*/
 	}
 	</style>
 	<style type="text/css">
@@ -491,12 +496,13 @@
 			<header class="global" id="header">
 				<div class="inside-global-flex">
 					<h1 id="header-h1">evenBits<sup>[0]</sup></h1>
-					<h2 id="header-h2"><span>青少年极客大会</span></h2>
+					<h2 id="header-h2"><span>极客的盛会，技术宅的狂欢。<br />2015 夏，与我们一起聆听青春互联网的心跳。</span></h2>
+					<!-- <h2 id="header-h2"><span>青少年极客大会</span></h2> -->
 					<div id="event-meta-info">
 						<address>Ningbo, China</address>
 						<time>July 27, 2015</time>
 					</div>
-					<h3 id="header-desc">极客的盛会，技术宅的狂欢。2015 夏，与我们一起聆听青春互联网的心跳。</h3>
+					<!-- <h3 id="header-desc">极客的盛会，技术宅的狂欢。2015 夏，与我们一起聆听青春互联网的心跳。</h3> -->
 				</div>
 			</header>
 			<div id="main">
@@ -506,29 +512,39 @@
 						<h2>每一比特中的熵</h2>
 						<p><span>要成为码农王的男人，</span><span>颈椎保健是头等大事。</span></p>
 						<p><span>还有读书就业、培育下一代小极客。</span><span>以及更多关于未来发展的小抄条。</span></p>
-						<div class="global-in mini-box">
+						<div class="global-in-1 mini-box">
 							<h3>Featured Speeches</h3>
 							<table>
 								<tbody>
 									<tr>
-										<td>颈椎病的预防与治疗</td>
-										<td>美国留学导论</td>
+										<th>青少年开发者生态报告</th>
 									</tr>
 									<tr>
-										<td>中国各大城市大学介绍</td>
-										<td>中国各大互联网公司工作体验</td>
+										<td>关于年轻极客这一种群的生活习性、聚居地、捕捉方法和饲喂指南。</td>
 									</tr>
 									<tr>
-										<td>北上广户籍攻略</td>
-										<td>北美移民攻略</td>
+										<th>校内地下工作教程</th>
 									</tr>
 									<tr>
-										<td>中国就业形势</td>
-										<td>美国就业形势</td>
+										<td>一些能提高课堂上开发效率的雕虫小技，例如在纸上沟通时加密信息、预防中间人攻击。</td>
 									</tr>
 									<tr>
-										<td>下一代的教育</td>
-										<td><del>如何优雅地听演讲</del></td>
+										<th>农民工进城指南</th>
+									</tr>
+									<tr>
+										<td>北上广深户籍指南、名校自招骗分导论，以及各城市的空气指数和咖啡馆地图。</td>
+									</tr>
+									<tr>
+										<th>码农装逼导论</th>
+									</tr>
+									<tr>
+										<td>上创意工作者们的社区发现更大的世界，用 Vim 在 UNIX 下写 GNU 代码规范。</td>
+									</tr>
+									<tr>
+										<th>圆桌爆料会</th>
+									</tr>
+									<tr>
+										<td>菊苣大神们不为人知的励志故事，节操无下限的弹幕吐槽和现场提问。</td>
 									</tr>
 								</tbody>
 							</table>
@@ -546,7 +562,7 @@
 						<h2>极客今晚留下来</h2>
 						<p><span>被命运召集起来的少年们，</span><span>相聚<del>冬木市（划掉）</del>宁波市。</span></p>
 						<p><span>今晚，两大抑止力、五大魔法纠缠于此，</span><span>开启根源之涡，通向全部的过去与未来。</span></p>
-						<div class="global-in mini-box">
+						<div class="global-in-2 mini-box">
 							<h3>Featured Activities</h3>
 							<table>
 								<tbody>
