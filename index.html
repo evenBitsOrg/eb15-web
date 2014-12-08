@@ -314,9 +314,11 @@
 	.feedback {
 	}
 	section table {
-		margin: 10px auto;
+		width: 100%;
+		margin: 10px 0;
 	}
 	section table tr {
+		width: 100%;
 	}
 	section table th {
 		font-size: 1.1em;
@@ -338,6 +340,8 @@
 	section#gsn table td {
 		text-align: center;
 		border-bottom: 1px solid #FFF;
+
+		width: 50%;
 	}
 	section#gsn table td:first-child {
 		/*border-right: 1px solid rgba(255, 255, 255, 0.2);*/
@@ -598,7 +602,7 @@
 						<p>与我签订契约，成为魔法少年吧。</p>
 						<p><del>其实后台还没搭起来，不要上当了（ 233</del></p>
 						<div class="form-preorder">
-							<input type="email" placeholder="dudulu@sern.org" id="input-email" datastate="000" autocomplete autocapitalize="none" autocorrect="off" spellcheck="false">
+							<input type="email" placeholder="dudulu@sern.ch" id="input-email" datastate="000" autocomplete autocapitalize="none" autocorrect="off" spellcheck="false">
 							<button type="button" class="btn btn-submit" id="submit-email-preorder" onclick="submitEmailPreorder()">提交</button>
 						</div>
 						<div class="message-line" id="email-preorder-server-back-message"></div>
