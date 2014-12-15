@@ -316,11 +316,20 @@
 	.feedback {
 	}
 	section table {
+		/*border-collapse: separate;*/
+		border-collapse: collapse;
+
 		width: 100%;
 		margin: 10px 0;
 	}
 	section table tr {
+		display: block;
 		width: 100%;
+	}
+	section table tr.bb {
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+		display: block;
 	}
 	section table th {
 		font-size: 1.1em;
@@ -337,22 +346,21 @@
 	section table td {
 		font-size: 0.875em;
 		font-weight: 300;
-		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
-		width: 50%;
+		display: block;
 		padding: 9px 0 12px;
 	}
 	section#gsn table {
-		border-collapse: collapse;
+	}
+	section#gsn table tr {
+		height: 45px;
 	}
 	section#gsn table td {
 		text-align: center;
-		border-bottom: 1px solid #FFF;
 
+		display: block;
+		float: left;
 		width: 50%;
-	}
-	section#gsn table td:first-child {
-		/*border-right: 1px solid rgba(255, 255, 255, 0.2);*/
 	}
 	</style>
 	<style type="text/css">
@@ -530,25 +538,25 @@
 									<tr>
 										<th>青少年开发者生态报告 <small>Social Baned List</small></th>
 									</tr>
-									<tr>
+									<tr class="bb">
 										<td>关于年轻极客这一种群的生活习性、聚居地、捕捉方法和饲喂指南。</td>
 									</tr>
 									<tr>
 										<th>进城指南 <small>Good Good Study Day Day Up</small></th>
 									</tr>
-									<tr>
+									<tr class="bb">
 										<td>北上广深户籍指南、名校自招骗分导论，以及各城市的空气指数和咖啡馆地图。</td>
 									</tr>
 									<tr>
 										<th>装腔导论 <small>The Art of Zhuang B (TAOZB)</small></th>
 									</tr>
-									<tr>
+									<tr class="bb">
 										<td>上创意工作者们的社区发现更大的世界，用 Vim 在 UNIX 下写 GNU 代码规范。</td>
 									</tr>
 									<tr>
 										<th>圆桌爆料会 <small>Black History in Bohemian Archive</small></th>
 									</tr>
-									<tr>
+									<tr class="bb">
 										<td>圈内名人们不为人知的励志故事，实时弹幕和现场提问。</td>
 									</tr>
 								</tbody>
@@ -571,17 +579,17 @@
 							<h3>Featured Activities</h3>
 							<table>
 								<tbody>
-									<tr>
-										<td>弹幕圆桌讨论会</td>
+									<tr class="bb">
+										<td>非诚勿扰菊苣秀</td>
+										<td>谁是卧底极客版</td>
 									</tr>
-									<tr>
-										<td>谁是卧底</td>
+									<tr class="bb">
+										<td>命题黑客马拉松</td>
+										<td>弹幕圆桌大圣战</td>
 									</tr>
-									<tr>
-										<td>GNU 传教会</td>
-									</tr>
-									<tr>
-										<td>黑客马拉松组队</td>
+									<tr class="bb">
+										<td>现场解谜大闯关</td>
+										<td><del>女装少年 Cosplay</del></td>
 									</tr>
 								</tbody>
 							</table>
