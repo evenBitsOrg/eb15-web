@@ -40,7 +40,10 @@
 		body {
 			font-size: 13px;
 		}
-		.global-in {
+		.hide-for-mobile {
+			display: none;
+			visibility: hidden;
+			opacity: 0;
 		}
 	}
 	@media screen and (min-width: 751px) {
@@ -562,7 +565,6 @@
 				<section class="global" id="play">
 					<div class="section-top-or-bottom-image"></div>
 					<div class="global-in">
-						<h2>大会话题</h2>
 						<p><span>为年轻人准备的舞台，为梦想者造就的机会。</span><span>一次不平凡的体验，两天属于你的嘉年华。</span></p>
 						<div class="global-in-1 mini-box">
 							<h3>Featured Speeches</h3>
@@ -654,8 +656,8 @@
 							<table class="dualcol">
 								<tbody>
 									<tr class="bb">
-										<td>弹幕视频生放松</td>
-										<td>线上演讲与吐槽</td>
+										<td>弹幕视频生放送</td>
+										<td>线上互动与吐槽</td>
 									</tr>
 									<tr class="bb">
 										<td>社交网络话题墙</td>
@@ -678,7 +680,7 @@
 						<div class="form-preorder">
 							<!-- <input type="email" placeholder="dudulu@sern.ch" id="input-email" datastate="000" autocomplete autocapitalize="none" autocorrect="off" spellcheck="false"> -->
 							<!-- <button type="button" class="btn btn-submit" id="submit-email-preorder" onclick="submitEmailPreorder()">提交</button> -->
-							<div><a class="goto-typeform" href="https://joyneop.typeform.com/to/LqxO5G">Sign Up <i class="fa left-padding fa-arrow-circle-right"></i></a></div>
+							<div><a class="goto-typeform" target="blank" href="https://joyneop.typeform.com/to/LqxO5G">Sign Up <i class="fa left-padding fa-arrow-circle-right"></i></a></div>
 						</div>
 						<div class="message-line" id="email-preorder-server-back-message"></div>
 						<p><span>无论是否把自己定义成 Geek，放开来玩就好。</span><span>2015 暑假，杭州见。</span></p>
@@ -690,7 +692,7 @@
 						<p>最后还要感谢以下赞助商及合作伙伴</p>
 						<ul>
 							<li><a href="http://shixian.com/"><img src="sp1.png"></a></li>
-							<li><img src="separate.png"></li>
+							<li class="hide-for-mobile"><img src="separate.png"></li>
 							<li><a href="http://anthonos.org/"><img src="pt1.png"></a></li>
 						</ul>
 					</div>
