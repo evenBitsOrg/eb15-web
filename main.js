@@ -53,5 +53,5 @@ var submitEmailPreorder = function () {
 
 var showCoreTeamMembers = function () {
 	document.getElementById("core-team").style.display = "block";
-	window.scrollBy(0,2000);
+	window.scrollBy(0,2001);
 };
