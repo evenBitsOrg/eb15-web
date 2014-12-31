@@ -3,13 +3,13 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>evenBits 亿万比特 — 青少年极客大会 2015</title>
+	<title>evenBits 亿万比特 — 青少年极客节 2015</title>
 	<link rel="favicon" href="favicon.ico">
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
-	<link rel="stylesheet" type="text/css" href="/fonts/play.css">
-	<link rel="stylesheet" type="text/css" href="/fonts/titillium-web.css">
-	<link rel="stylesheet" type="text/css" href="/fonts/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="fonts/play.css">
+	<link rel="stylesheet" type="text/css" href="fonts/titillium-web.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome.css">
 	<script type="text/javascript">
 	var initialWidth = window.innerWidth;
 	var firstTimeDetermineViewportSize = true;
@@ -72,6 +72,9 @@
 		-ms-transition: all 750ms ease;
 		transition: all 750ms ease;
 		box-sizing: border-box;
+	}
+	i.fa.left-padding {
+		padding-left: 0.5em;
 	}
 	body {
 		font-family: 'Play', 'GillSans-Light', 'Gill Sans Light', 'Gill Sans', 'Myriad Pro', 'Myriad Set Pro', 'Myriad', 'Myriad Set', Myriad, 'Open Sans', 'Helvetica Neue', Helvetica, 'Lantinghei SC', 'Lantinghei TC', 'Hiragino Sans GB', 'NotoSansCJKsc-Light', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Source Han Sans CJK', 'Noto Sans CJK', 'Source Han Sans JP', 'Noto Sans CJK JP', 'Source Han Sans', 'Noto Sans CJK', 'Hiragino Kaku Gothic Pro', Hiragino, sans-serif;
@@ -300,6 +303,11 @@
 	section#gsn img.section-top-or-bottom-image {
 		margin-bottom: -3px;
 	}
+	section#gmoe {
+		color: #FFF;
+		text-shadow: rgba(0, 0, 0, 0.0877) 0 1px 0;
+		background: #6DD53A;
+	}
 	section#order {
 		color: #444;
 		background: #F8F8F8;
@@ -327,7 +335,7 @@
 		width: 100%;
 	}
 	section table tr.bb {
-		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.6222);
 
 		display: block;
 	}
@@ -350,12 +358,12 @@
 		display: block;
 		padding: 9px 0 12px;
 	}
-	section#gsn table {
+	table.dualcol {
 	}
-	section#gsn table tr {
+	table.dualcol tr {
 		height: 45px;
 	}
-	section#gsn table td {
+	table.dualcol td {
 		text-align: center;
 
 		display: block;
@@ -365,6 +373,7 @@
 	</style>
 	<style type="text/css">
 	.form-preorder {
+		text-align: center;
 		width: 100%;
 		max-width: 480px;
 		height: 128px;
@@ -440,6 +449,32 @@
 		display: block;
 		height: 22px;
 	}
+	/* ------------------------ */
+	.goto-typeform {
+		color: #FFF;
+		text-decoration: none;
+		text-shadow: rgba(0, 0, 0, 0.0877) 0 1px 0;
+		background: #32A7E0;
+		background-origin: border-box;
+		box-shadow: rgba(255, 255, 255, 0.0977) 0 2px 1px 0 inset, #23759E 0 4px 0px 0, rgba(0, 0, 0, 0.1333) 0 0 1px 0;
+		border-radius: 4px;
+
+		display: inline-block;
+		position: relative;
+		padding: 0.5em 2em;
+		margin: 0 auto;
+
+		-webkit-transition: all 1ms ease;
+		-ms-transition: all 1ms ease;
+		transition: all 1ms ease;
+		box-sizing: border-box;
+	}
+	.goto-typeform:hover {
+		background: #2D99CF;
+		box-shadow: rgba(0, 0, 0, 0.0477) 0 1px 0px 0 inset, #23759E 0 0px 0px 0, rgba(0, 0, 0, 0) 0 0 1px 0;
+
+		top: 4px;
+	}
 	</style>
 	<style type="text/css">
 	input[datastate="100"] {
@@ -459,7 +494,7 @@
 			top: 1em;
 			margin: 0;
 		}
-		section#gsn img.section-title-image {
+		section img.section-title-image {
 			width: 100%;
 			max-width: 550px;
 		}
@@ -484,7 +519,7 @@
 			top: 50%;
 			margin: -10em 0 0 0;
 		}
-		section#gsn img.section-title-image {
+		section img.section-title-image {
 			max-width: 550px;
 			height:  420px;
 		}
@@ -527,9 +562,8 @@
 				<section class="global" id="play">
 					<div class="section-top-or-bottom-image"></div>
 					<div class="global-in">
-						<h2>每一比特中的熵</h2>
-						<p><span>要成为码农王的男人，</span><span>颈椎保健是头等大事。</span></p>
-						<p><span>还有读书就业、培育下一代小极客。</span><span>以及更多关于未来发展的小抄条。</span></p>
+						<h2>大会话题</h2>
+						<p><span>为年轻人准备的舞台，为梦想者造就的机会。</span><span>一次不平凡的体验，两天属于你的嘉年华。</span></p>
 						<div class="global-in-1 mini-box">
 							<h3>Featured Speeches</h3>
 							<table>
@@ -547,7 +581,7 @@
 										<td>一些能提高课堂上开发效率的雕虫小技，例如在纸上沟通时加密信息、预防中间人攻击。</td>
 									</tr>
 									<tr>
-										<th>农民工进城指南 <small>Nong Ming Gong Jing Cheng Fang Pian Zhi Nan</small></th>
+										<th>进城指南 <small>Nong Ming Gong Jing Cheng Fang Pian Zhi Nan</small></th>
 									</tr>
 									<tr class="bb">
 										<td>北上广深户籍指南、名校自招骗分导论，以及各城市的空气指数和咖啡馆地图。</td>
@@ -564,6 +598,9 @@
 									<tr class="bb">
 										<td>菊苣大神们不为人知的励志故事，节操无下限的弹幕吐槽和现场提问。</td>
 									</tr>
+									<tr>
+										<td>…… 以及更多你期待已久的话题，只此一家。</td>
+									</tr>
 								</tbody>
 							</table>
 						</div>
@@ -578,11 +615,12 @@
 					<div class="global-in">
 						<img class="section-title-image" src="gsn.jpg">
 						<h2>极客今晚留下来</h2>
-						<p><span>被命运召集起来的少年们，</span><span>相聚<del>冬木市（划掉）</del>杭州市。</span></p>
-						<p><span>今晚，两大抑止力、五大魔法纠缠于此，</span><span>开启根源之涡，通向全部的过去与未来。</span></p>
+						<h2>Geek/stay night</h2>
+						<p><span>被命运召集起来的少年们，</span><span>相聚杭州市。</span></p>
+						<p><span>两大抑止力、五大魔法纠缠于此，</span><span>开启根源之涡，通向全部的过去与未来。</span></p>
 						<div class="global-in-2 mini-box">
 							<h3>Featured Activities</h3>
-							<table>
+							<table class="dualcol">
 								<tbody>
 									<tr class="bb">
 										<td>非诚勿扰菊苣秀</td>
@@ -594,7 +632,7 @@
 									</tr>
 									<tr class="bb">
 										<td>现场解谜大闯关</td>
-										<td><del>勇敢的少年快去穿上女装</del></td>
+										<td><del>女装少年 Cosplay</del></td>
 									</tr>
 								</tbody>
 							</table>
@@ -604,20 +642,47 @@
 							<a href="mailto:event@evenbits.org" class="btn btn-email"><i class="fa fa-envelope"></i></a>
 						</div>
 					</div>
+					<img class="section-top-or-bottom-image" src="green-triangle.svg">
+				</section>
+				<section class="global" id="gmoe">
+					<div class="global-in">
+						<img class="section-title-image" src="gmoe.jpg">
+						<h2>极萌·线上同步大会</h2>
+						<h2>GEEK.MOE Online Conference</h2>
+						<p><span>谁说只有现充才能参与线下活动？</span><span>宅在家里，也能享受活动乐趣。</span></p>
+						<div class="global-in-2 mini-box">
+							<table class="dualcol">
+								<tbody>
+									<tr class="bb">
+										<td>弹幕视频生放松</td>
+										<td>线上演讲与吐槽</td>
+									</tr>
+									<tr class="bb">
+										<td>社交网络话题墙</td>
+										<td>黑客解谜大挑战</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- <div class="feedback">
+							<p>想到了更有趣的创意玩法？告诉我们吧！</p>
+							<a href="mailto:event@evenbits.org" class="btn btn-email"><i class="fa fa-envelope"></i></a>
+						</div> -->
+					</div>
 					<img class="section-top-or-bottom-image" src="light-gray-triangle.svg">
 				</section>
 				<section class="global" id="order">
 					<div class="global-in">
-						<h2>念念不忘，必有回响</h2>
 						<p>与我签订契约，成为魔法少年吧。</p>
 						<p><del>其实后台还没搭起来，不要上当了（ 233</del></p>
 						<div class="form-preorder">
-							<input type="email" placeholder="dudulu@sern.ch" id="input-email" datastate="000" autocomplete autocapitalize="none" autocorrect="off" spellcheck="false">
-							<button type="button" class="btn btn-submit" id="submit-email-preorder" onclick="submitEmailPreorder()">提交</button>
+							<!-- <input type="email" placeholder="dudulu@sern.ch" id="input-email" datastate="000" autocomplete autocapitalize="none" autocorrect="off" spellcheck="false"> -->
+							<!-- <button type="button" class="btn btn-submit" id="submit-email-preorder" onclick="submitEmailPreorder()">提交</button> -->
+							<div><a class="goto-typeform" href="https://joyneop.typeform.com/to/LqxO5G">Sign Up <i class="fa left-padding fa-arrow-circle-right"></i></a></div>
 						</div>
 						<div class="message-line" id="email-preorder-server-back-message"></div>
 						<p><span>无论是否把自己定义成 Geek，放开来玩就好。</span><span>2015 暑假，杭州见。</span></p>
-						<p><span><del>一年一度的青少年技术圈同性交友大会。</del></span></p>
+						<p><span><del>欢迎光临一年一度的青少年技术圈同性交友大会</del></span></p>
 					</div>
 				</section>
 				<footer class="global" id="footer">
@@ -630,7 +695,7 @@
 						</ul>
 					</div>
 					<div class="copyright" onclick="showCoreTeamMembers()">
-						© 2014 evenMedia Inc. | Designed by Joy Neop<br />组委会保留本次大会最终解释权
+						© 2014 evenMedia Inc.<br />组委会保留本次大会最终解释权
 					</div>
 					<div class="core-team" id="core-team">
 						<div class="core-team-member">
