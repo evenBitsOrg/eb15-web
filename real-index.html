@@ -702,7 +702,7 @@
 						</ul>
 					</div>
 					<div class="copyright" onclick="showCoreTeamMembers()">
-						© 2014 evenMedia Inc.<br />组委会保留本次大会最终解释权
+						© <script type="text/javascript">document.write((new Date()).getFullYear());</script> evenMedia Inc.<br />组委会保留本次大会最终解释权
 					</div>
 					<div class="core-team" id="core-team">
 						<div class="core-team-member">
@@ -738,7 +738,12 @@
 								var xhr = new XMLHttpRequest();
 								xhr.open('GET', 'http://api.pippapasses.net/pippa-passes');
 								xhr.send();
-								return xhr.responseText;
+								if (xhr.slice('')[xhr.length-1]) {};
+								var text = xhr.responseText;
+								if (text.split("")[(text.length-1)].match(/\w/) != null) {
+									text = text + ".";
+								};
+								return text;
 							})());
 							</script></span>
 						</p>

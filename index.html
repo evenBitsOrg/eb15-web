@@ -665,11 +665,11 @@
 						</ul>
 					</div>
 					<div class="copyright" onclick="showCoreTeamMembers()">
-						© 2014 evenMedia Inc. | Designed by Joy Neop<br />组委会保留本次大会最终解释权
+						© <script type="text/javascript">document.write((new Date()).getFullYear());</script> evenMedia Inc.<br />组委会保留本次大会最终解释权
 					</div>
-					<!--div class="core-team" id="core-team">
+					<div class="core-team" id="core-team">
 						<div class="core-team-member">
-							<a class="core-team-member-link" href="http://dimpurr.com/">
+							<a class="core-team-member-link" href="http://dimpurr.com/" target="_blank">
 								<img class="core-team-member-avatar" src="avatar-1.jpg">
 								<div class="core-team-member-meta-info">
 									<span class="core-team-member-name">钉子</span>
@@ -678,7 +678,7 @@
 							</a>
 						</div>
 						<div class="core-team-member">
-							<a class="core-team-member-link" href="http://laosb.lasteam.net/">
+							<a class="core-team-member-link" href="http://laosb.lasteam.net/" target="_blank">
 								<img class="core-team-member-avatar" src="avatar-2.jpg">
 								<div class="core-team-member-meta-info">
 									<span class="core-team-member-name">laosb</span>
@@ -687,19 +687,30 @@
 							</a>
 						</div>
 						<div class="core-team-member">
-							<a class="core-team-member-link" href="http://www.joyneop.com/">
+							<a class="core-team-member-link" href="http://www.joyneop.com/" target="_blank">
 								<img class="core-team-member-avatar" src="avatar-3.jpg">
 								<div class="core-team-member-meta-info">
-									<span class="core-team-member-name">JN</span>
+									<span class="core-team-member-name">Joy Neop</span>
 									<span class="core-team-member-title">Oracle - 二号机</span>
 								</div>
 							</a>
 						</div>
 						<p id="pippa-passes">
-							<span>GOD'S IN HIS HEAVEN.</span>
-							<span>ALL'S RIGHT WITH THE WORLD.</span>
+							<span><script type="text/javascript">
+							document.write((function(){
+								var xhr = new XMLHttpRequest();
+								xhr.open('GET', 'http://api.pippapasses.net/pippa-passes');
+								xhr.send();
+								if (xhr.slice('')[xhr.length-1]) {};
+								var text = xhr.responseText;
+								if (text.split("")[(text.length-1)].match(/\w/) != null) {
+									text = text + ".";
+								};
+								return text;
+							})());
+							</script></span>
 						</p>
-					</div-->
+					</div
 				</footer>
 			</div>
 		</div>
