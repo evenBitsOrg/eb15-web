@@ -738,12 +738,12 @@
 								var xhr = new XMLHttpRequest();
 								xhr.open('GET', 'http://api.pippapasses.net/pippa-passes');
 								xhr.send();
-								if (xhr.slice('')[xhr.length-1]) {};
 								var text = xhr.responseText;
 								if (text.split("")[(text.length-1)].match(/\w/) != null) {
 									text = text + ".";
 								};
 								return text;
+
 							})());
 							</script></span>
 						</p>
