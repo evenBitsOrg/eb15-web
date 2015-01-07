@@ -736,7 +736,7 @@
 							<span><script type="text/javascript">
 							document.write((function(){
 								var xhr = new XMLHttpRequest();
-								xhr.open('GET', 'http://api.pippapasses.net/pippa-passes');
+								xhr.open('GET', 'http://api.pippapasses.net/pippa-passes', false);
 								xhr.send();
 								var text = xhr.responseText;
 								if (text.split("")[(text.length-1)].match(/\w/) != null) {
