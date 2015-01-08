@@ -2,11 +2,11 @@
   font-family: 'Play';
   font-style: normal;
   font-weight: 400;
-  src: local('Play'), url(fonts/Play.woff) format('woff'), url(//2015.evenbits.org/fonts/Play.woff) format('woff'), url(//evenbitsorg.github.io/eb15-web/fonts/Play.woff) format('woff');
+  src: local('Play'), url(/fonts/Play.woff) format('woff'), url(//2015.evenbits.org/fonts/Play.woff) format('woff'), url(//evenbitsorg.github.io/eb15-web/fonts/Play.woff) format('woff');
 }
 @font-face {
   font-family: 'Play';
   font-style: normal;
   font-weight: 700;
-  src: local('Play-Bold'), url(fonts/Play-Bold.woff) format('woff'), url(//2015.evenbits.org/fonts/Play-Bold.woff) format('woff'), url(//evenbitsorg.github.io/eb15-web/fonts/Play-Bold.woff) format('woff');
+  src: local('Play-Bold'), url(/fonts/Play-Bold.woff) format('woff'), url(//2015.evenbits.org/fonts/Play-Bold.woff) format('woff'), url(//evenbitsorg.github.io/eb15-web/fonts/Play-Bold.woff) format('woff');
 }
