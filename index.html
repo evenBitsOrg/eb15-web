@@ -279,6 +279,12 @@
 	}
 	</style>
 	<style type="text/css">
+	section img.section-top-or-bottom-image:last-child {
+		margin-bottom: -3px;
+	}
+	section img.section-top-or-bottom-image:first-child {
+		margin-top: -3px;
+	}
 	section#play {
 		color: #FFF;
 		text-shadow: rgba(0, 0, 0, 0.0877) 0 1px 0;
@@ -288,7 +294,6 @@
 		background: url(waves.png) top repeat-x scroll;
 
 		height: 100px;
-		margin-top: -3px;
 		-webkit-animation: waves 6s infinite;
 		-webkit-animation-timing-function: linear;
 		-webkit-animation-direction: normal;
@@ -299,17 +304,11 @@
 		animation-timing-function: linear;
 		animation-direction: normal;
 	}
-	section#play img.section-top-or-bottom-image {
-		margin-bottom: -3px;
-	}
 	section#gsn {
 		color: #FFF;
 		background: #000;
 	}
 	section#gsn img.section-title-image {
-	}
-	section#gsn img.section-top-or-bottom-image {
-		margin-bottom: -3px;
 	}
 	section#gmoe {
 		color: #FFF;
@@ -469,6 +468,7 @@
 
 		display: inline-block;
 		position: relative;
+		top: 0;
 		padding: 0.5em 2em;
 		margin: 0 auto;
 
@@ -570,9 +570,7 @@
 				<section class="global" id="play">
 					<div class="section-top-or-bottom-image"></div>
 					<div class="global-in">
-						<h2>每一比特中的熵</h2>
-						<p><span>要成为码农王的男人，</span><span>颈椎保健是头等大事。</span></p>
-						<p><span>还有读书就业、培育下一代小极客。</span><span>以及更多关于未来发展的小抄条。</span></p>
+						<p><span>为年轻人准备的舞台，为梦想者造就的机会。</span><span>一次不平凡的体验，两天属于你的嘉年华。</span></p>
 						<div class="global-in-1 mini-box">
 							<h3>Featured Speeches</h3>
 							<table>
@@ -584,42 +582,52 @@
 										<td>关于年轻极客这一种群的生活习性、聚居地、捕捉方法和饲喂指南。</td>
 									</tr>
 									<tr>
-										<th>进城指南 <small>Good Good Study Day Day Up</small></th>
+										<th>校内地下工作教程 <small>Good Good Study Day Day Up</small></th>
+									</tr>
+									<tr class="bb">
+										<td>一些能提高课堂上开发效率的雕虫小技，例如在纸上沟通时加密信息、预防中间人攻击。</td>
+									</tr>
+									<tr>
+										<th>进城指南 <small>Nong Ming Gong Jing Cheng Fang Pian Zhi Nan</small></th>
 									</tr>
 									<tr class="bb">
 										<td>北上广深户籍指南、名校自招骗分导论，以及各城市的空气指数和咖啡馆地图。</td>
 									</tr>
 									<tr>
-										<th>装腔导论 <small>The Art of Zhuang B (TAOZB)</small></th>
+										<th>码农装逼导论 <small>The Art of Zhuang B (TAOZB)</small></th>
 									</tr>
 									<tr class="bb">
 										<td>上创意工作者们的社区发现更大的世界，用 Vim 在 UNIX 下写 GNU 代码规范。</td>
 									</tr>
-									<tr>
+									<!--tr>
 										<th>圆桌爆料会 <small>Black History in Bohemian Archive</small></th>
 									</tr>
 									<tr class="bb">
-										<td>圈内名人们不为人知的励志故事，实时弹幕和现场提问。</td>
+										<td>技术大牛们不为人知的励志故事，节操无下限的弹幕吐槽和现场提问。</td>
+									</tr-->
+									<tr>
+										<td>…… 以及更多你期待已久的话题，只此一家。</td>
 									</tr>
 								</tbody>
 							</table>
 						</div>
 						<div class="feedback">
-							<p>要来上台演讲吗少年？</p>
+							<p>要来台上搞个大新闻么少年？</p>
 							<a href="mailto:event@evenbits.org" class="btn btn-email"><i class="fa fa-envelope"></i></a>
 						</div>
 					</div>
 					<img class="section-top-or-bottom-image" src="black-triangle.svg">
 				</section>
-				<section class="global" id="gsn">
+				<!--section class="global" id="gsn">
 					<div class="global-in">
 						<img class="section-title-image" src="gsn.jpg">
 						<h2>极客今晚留下来</h2>
+						<h2>Geek/stay night</h2>
 						<p><span>被命运召集起来的少年们，</span><span>相聚杭州市。</span></p>
 						<p><span>两大抑止力、五大魔法纠缠于此，</span><span>开启根源之涡，通向全部的过去与未来。</span></p>
 						<div class="global-in-2 mini-box">
 							<h3>Featured Activities</h3>
-							<table>
+							<table class="dualcol">
 								<tbody>
 									<tr class="bb">
 										<td>非诚勿扰菊苣秀</td>
@@ -641,18 +649,40 @@
 							<a href="mailto:event@evenbits.org" class="btn btn-email"><i class="fa fa-envelope"></i></a>
 						</div>
 					</div>
+					<img class="section-top-or-bottom-image" src="green-triangle.svg">
+				</section-->
+				<section class="global" id="gmoe">
+					<div class="global-in">
+						<img class="section-title-image" src="gmoe.jpg">
+						<h2>极萌·线上同步大会</h2>
+						<h2>GEEK.MOE Online Conference</h2>
+						<p><span>谁说只有现充才能参与线下活动？</span><span>宅在家里，也能享受活动乐趣。</span></p>
+						<div class="global-in-2 mini-box">
+							<table class="dualcol">
+								<tbody>
+									<tr class="bb">
+										<td>弹幕视频生放送</td>
+										<td>线上互动与吐槽</td>
+									</tr>
+									<tr class="bb">
+										<td>社交网络话题墙</td>
+										<td>黑客解谜大挑战</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
 					<img class="section-top-or-bottom-image" src="light-gray-triangle.svg">
 				</section>
 				<section class="global" id="order">
 					<div class="global-in">
-						<h2>Sign Up</h2>
-						<p>（预订系统暂未上线）</p>
+						<p>签订契约，订阅最新动态</p>
 						<div class="form-preorder">
-							<input type="email" placeholder="dudulu@sern.ch" id="input-email" datastate="000" autocomplete autocapitalize="none" autocorrect="off" spellcheck="false">
-							<button type="button" class="btn btn-submit" id="submit-email-preorder" onclick="submitEmailPreorder()">提交</button>
+							<div><a class="goto-typeform" target="blank" href="/signup.html">Sign Up <i class="fa left-padding fa-arrow-circle-right"></i></a></div>
 						</div>
 						<div class="message-line" id="email-preorder-server-back-message"></div>
-						<p><span>无论是否把自己定义成 geek，放开来玩就好。</span><span>2015 暑假，杭州见。</span></p>
+						<p><span>无论是否把自己定义成 Geek，放开来玩就好。</span><span>2015 暑假，杭州见。</span></p>
+						<p><span><del>欢迎光临一年一度的青少年技术圈同性交友大会</del></span></p>
 					</div>
 				</section>
 				<footer class="global" id="footer">
@@ -694,18 +724,18 @@
 							<span><script type="text/javascript">
 							document.write((function(){
 								var xhr = new XMLHttpRequest();
-								xhr.open('GET', 'http://api.pippapasses.net/pippa-passes');
+								xhr.open('GET', 'http://api.pippapasses.net/pippa-passes', false);
 								xhr.send();
-								if (xhr.slice('')[xhr.length-1]) {};
 								var text = xhr.responseText;
 								if (text.split("")[(text.length-1)].match(/\w/) != null) {
 									text = text + ".";
 								};
 								return text;
+
 							})());
 							</script></span>
 						</p>
-					</div
+					</div>
 				</footer>
 			</div>
 		</div>
